@@ -21748,8 +21748,9 @@
 ||15111223344.com^$important
 ||pdfer.cn^$important
 ||shiwan1688.cn^$important
-||jmvbt.com/img/19av
-||jmvbt.com/img/91
+||jmvbt.com/img/19av/H_5.gif
+||jmvbt.com/img/91/91sp_960_70_1.gif
+||jmvbt.com/img/91/91sp_950_150_1.gif
 !---------------------------------------------------------------
 ! Title: AdGuardHome分类规则 哔哩哔哩
 ! hdslb.com是blibili的相关api关键网址
@@ -21840,7 +21841,6 @@
 ||security.iqiyi.com/static/cook/v1/cooksdk.js
 ||stc.iqiyipic.com/js/sdkpack/vippay.js
 ||stc.iqiyipic.com/js/sdkpack/barrage
-@@||t7z.cupid.iqiyi.com/show$script,important
 !-------腾讯播放广告-------
 ||vm.gtimg.cn/c/*/tencentvideo/txpv*$replace=/\w\.ad\)/{"adGetv":{}})/
 ||l.qq.com/*get_video_mark_all*$replace=/"admark"/"admark":{}\,"noad"/
