@@ -10201,6 +10201,7 @@
 127.0.0.1 bdcdncmn-gd.inter.71edge.com
 127.0.0.1 mixer.cupid.ptqy.gitv.tv
 127.0.0.1 msg.ptqy.gitv.tv
+127.0.0.1 t7z.cupid.iqiyi.com
 #--腾讯视频-Tencent
 127.0.0.1 aiseet.aa.atianqi.com
 127.0.0.1 livep.l.aiseet.atianqi.com
