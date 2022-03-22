@@ -15255,7 +15255,6 @@
 ||shoagooy.net^
 ||atm.youku.com/
 ||cibntv.net/youku/$media
-!||t7z.cupid.iqiyi.com/show$script,important
 @@||video.qq.com/fcgi-bin/
 ||mark.l.qq.com/fcgi-bin/get_video_mark_all?idlist=
 ||bjcathay.com/
@@ -20323,7 +20322,6 @@
 ||sessions.bugsnag.com^
 ||checkadblock.ru/banners^
 ||baidu.com/article/ajax/relatefeed?
-||t7z.cupid.iqiyi.com^
 ||91mjw.com/wp-author/tga^
 ||xalzny.xyz^
 ||hivedata.com.cn/trace/*/ad^
@@ -21750,6 +21748,8 @@
 ||15111223344.com^$important
 ||pdfer.cn^$important
 ||shiwan1688.cn^$important
+||jmvbt.com/img/19av
+||jmvbt.com/img/91
 !---------------------------------------------------------------
 ! Title: AdGuardHome分类规则 哔哩哔哩
 ! hdslb.com是blibili的相关api关键网址
