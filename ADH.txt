@@ -21748,9 +21748,9 @@
 ||15111223344.com^$important
 ||pdfer.cn^$important
 ||shiwan1688.cn^$important
-||jmvbt.com/img/19av/H_5.gif
-||jmvbt.com/img/91/91sp_960_70_1.gif
-||jmvbt.com/img/91/91sp_950_150_1.gif
+||jmvbt.com/img/19av/*.gif
+||jmvbt.com/img/91/*.gif
+||jmvbt.com/img/91/*.gif
 !---------------------------------------------------------------
 ! Title: AdGuardHome分类规则 哔哩哔哩
 ! hdslb.com是blibili的相关api关键网址
@@ -21774,8 +21774,6 @@
 ||dl.txcdns.com^$important
 ||pingma.qq.com^$important
 ||tmf*.m.qq.com^$important
-||dns.weixin.qq.com^$important
-||dns.weixin.qq.com.cn^$important
 ||*wxs*.qq.com^$important
 ||soup.v.qq.com^$important
 ||gdt.qq.com^$important
