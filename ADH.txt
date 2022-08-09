@@ -30,7 +30,6 @@
 ||wows.360.cn^$important
 ||360chou.com^$important
 ||wot.360.cn^$important
-||u.360.cn^$important
 ||yasuo.360.cn^$important
 ||yule.360.com^$important
 ||360shuke.com^$important
@@ -219,8 +218,6 @@
 ||coolppa.cn$important
 ||tinyap2.cn$important
 ||blovestorm.com$important
-||uc123.com$important
-||open-uc.cn$important
 ||tinyppa.cn$important
 ||uflowx.com$important
 ! [东阳市晴皓网络科技有限公司(重点关注)]
@@ -1299,7 +1296,6 @@
 其他人分享的酷安广告域名
 ||dm-hl.toutiao.com
 ||dm-lq.toutiao.com
-||f.video.weibocdn.com
 ||access1.tpns.tencent.com
 ||dm.toutiao.com
 ||log.tpns.tencent.com
