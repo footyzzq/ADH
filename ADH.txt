@@ -687,9 +687,7 @@
 ||dl.txcdns.com^$important
 ||pingma.qq.com^$important
 ||tmf*.m.qq.com^$important
-||*wxs*.qq.com^$important
 ||soup.v.qq.com^$important
-||gdt.qq.com^$important
 ||*stat*.qq*^$important
 ||*overseactrl*^$important
 ||beacon.qq.com^$important
