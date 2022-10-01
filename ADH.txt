@@ -1399,3 +1399,136 @@
 ||xiaoluoyl.com^$important
 ||bbs.sxshczs.cn^$important
 ||re.fddcpxg.cn^$important
+#屏蔽百度及admob广告：
+127.0.0.1 mobads.baidu.com
+127.0.0.1 mobads-logs.baidu.com
+#屏蔽谷歌及admob广告：
+127.0.0.1 media.admob.com
+127.0.0.1 mob.adwhirl.com
+127.0.0.1 static.googeadsserving.cn
+127.0.0.1 googleads.g.doubleclick.net
+#屏蔽芒果广告：
+127.0.0.1 storage.adsmogo.net
+127.0.0.1 imp.adsmogo.com
+127.0.0.1 imp.adsmogo.net
+127.0.0.1 imp.adsmogo.org
+127.0.0.1 imp.adsmogo.mobi
+127.0.0.1 req.adsmogo.com
+127.0.0.1 req.adsmogo.net
+127.0.0.1 req.adsmogo.org
+127.0.0.1 req.adsmogo.mobi
+127.0.0.1 cfg.adsmogo.com 
+127.0.0.1 cfg.adsmogo.net 
+127.0.0.1 cfg.adsmogo.org 
+127.0.0.1 cfg.adsmogo.mobi
+127.0.0.1 cus.adsmogo.com
+127.0.0.1 cus.adsmogo.net
+127.0.0.1 cus.adsmogo.org
+127.0.0.1 cus.adsmogo.mobi
+127.0.0.1 api2.adsmogo.com
+127.0.0.1 api2.adsmogo.net
+127.0.0.1 api2.adsmogo.org
+127.0.0.1 api2.adsmogo.mobi
+127.0.0.1 blk.adsmogo.mobi
+#屏蔽adview广告：
+127.0.0.1 www.adview.cn
+127.0.0.1 report.adview.cn
+#屏蔽多盟广告：
+127.0.0.1 swx.domob.cn
+127.0.0.1 scc.domob.cn
+127.0.0.1 sm.domob.cn
+#屏蔽友盟广告：
+127.0.0.1 alog.umeng.com
+127.0.0.1 alog.umeng.co
+#屏蔽安沃广告：
+127.0.0.1 r2.adwo.com
+127.0.0.1 static.adwo.com
+#屏蔽友米广告：
+127.0.0.1 banner.img.static.youmi.net
+127.0.0.1 aos.gw.youmi.net
+127.0.0.1 stat.gw.youmi.net
+127.0.0.1 aos.wall.youmi.net
+#屏蔽易传媒广告：
+127.0.0.1 amob.acs86.com
+127.0.0.1 static.acs86.com
+#屏蔽人人网广告：
+127.0.0.1 aggregate.renren.com
+127.0.0.1 interval.adbc.renren.com
+127.0.0.1 wall.adbc.renren.com
+#屏蔽飞云广告：
+127.0.0.1 www.admarket.mobi
+#屏蔽大气传媒：
+127.0.0.1 ad.airad.com
+#屏蔽V告广告：
+127.0.0.1 ad.veegao.com
+#屏蔽亿积分：
+127.0.0.1 sdk.yijifen.com
+127.0.0.1 res.yijifen.com
+#屏蔽mobclix广告:
+127.0.0.1 ads.mobclix.com
+#屏蔽其它广告：
+127.0.0.1  api.airpush.com
+127.0.0.1  ad.leadboltapps.net
+127.0.0.1  ad.leadbolt.net
+#2014.1.24更新添加
+127.0.0.1 media.mydas.mobi
+#受不了小米
+127.0.0.1 api.miwifi.com
+127.0.0.1 s.miwifi.com
+127.0.0.1 ad.mi.com
+127.0.0.1 ad.xiaomi.com
+127.0.0.1 ad1.xiaomi.com
+127.0.0.1 tat.pandora.xiaomi.com
+127.0.0.1 api.ad.xiaomi.com
+127.0.0.1 t7z.cupid.ptqy.gitv.tv
+127.0.0.1 ad.xiaomi.com
+127.0.0.1 api.ad.xiaomi.com
+127.0.0.1 sdkconfig.ad.xiaomi.com
+127.0.0.1 stat.pandora.xiaomi.com
+127.0.0.1 upgrade.mishop.pandora.xiaomi.com
+127.0.0.1 logonext.tv.kuyun.com
+127.0.0.1 config.kuyun.com
+127.0.0.1 mishop.pandora.xiaomi.com
+127.0.0.1 dvb.pandora.xiaomi.com
+127.0.0.1 api.ad.xiaomi.com
+127.0.0.1 de.pandora.xiaomi.com
+127.0.0.1 data.mistat.xiaomi.com
+127.0.0.1 jellyfish.pandora.xiaomi.com
+127.0.0.1 gallery.pandora.xiaomi.com
+127.0.0.1 bss.pandora.xiaomi.com
+127.0.0.1 gvod.aiseejapp.atianqi.com
+127.0.0.1 sdkauth.hpplay.cn
+127.0.0.1 adeng.hpplay.cn
+127.0.0.1 ad.hpplay.cn
+127.0.0.1 conf.hpplay.cn
+127.0.0.1 fix.hpplay.cn
+127.0.0.1 adcdn.hpplay.cn
+127.0.0.1 sl.hpplay.cn
+127.0.0.1 rp.hpplay.cn
+127.0.0.1 h5.hpplay.com.cn
+127.0.0.1 hpplay.cdn.cibn.cc
+127.0.0.1 sdkauth.hpplay.cn
+127.0.0.1 imdns.hpplay.cn
+127.0.0.1 vipauth.hpplay.cn
+127.0.0.1 rp.hpplay.cn
+127.0.0.1 sl.hpplay.cn
+127.0.0.1 519332DA.rtc.youme.im
+127.0.0.1 hotupgrade.hpplay.
+127.0.0.1 pin.hpplay.cn
+127.0.0.1 tvapp.hpplay.cn
+127.0.0.1 hpplay.cdn.cibn.cc
+127.0.0.1 image.hpplay.cn
+127.0.0.1 gslb.hpplay.cn
+127.0.0.1 rp.hpplay.cn
+127.0.0.1 cdn.hpplay.com.cn
+127.0.0.1 h5.hpplay.com.cn
+127.0.0.1 adeng.hpplay.cn
+127.0.0.1 conf.hpplay.cn
+127.0.0.1 adcdn.hpplay.cn
+127.0.0.1 g.dtv.cn.miaozhen.com
+127.0.0.1 android.bugly.qq.com
+127.0.0.1 alog.umeng.com
+127.0.0.1 hotupgrade.hpplay.cn
+127.0.0.1 pin.hpplay.cn
+127.0.0.1 api.io.mi.com
+127.0.0.1 device.io.mi.com
