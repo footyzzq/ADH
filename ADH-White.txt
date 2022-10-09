@@ -1,9 +1,10 @@
-@@||weixin.qq.com^^$important
+@@||weixin.qq.com^$important
 @@||jdpay.com^$important
 @@||aliyuncs.com^$important
 @@||alipay.com^$important
 @@||taobao.com^$important
 @@||tmall.com^$important
+@@||dingtalk.com^$important
 @@||jd.com^important
 @@||flyme.cn^$important
 @@||meizu.com^$important
@@ -139,9 +140,7 @@
 @@||t.me^$important
 @@||facebook.com^$important
 @@||m.youtube.com^$important
-@@||www.google.com^$important
 @@||connectivitycheck.gstatic.com^$important
-@@||www.youtube.com^$important
 @@||youtu.be^$important
 @@||youtubei.googleapis.com^$important
 @@||apis.google.com
@@ -260,7 +259,6 @@
 @@||pingtas.qq.com^$important
 @@||pingtcss.qq.com^$important
 @@||pp.myapp.com^$important
-@@||weixin.qq.com^$important
 @@||vdun.weibo.com^$important
 @@||soft.tbs.imtt.qq.com^$important
 @@||stat.y.qq.com^$important
@@ -327,7 +325,6 @@
 @@||wqsd.jd.com
 @@||raw.githubusercontent.com^$important
 @@||self.events.data.microsoft.com^$important
-@@||bing.com^$important
 @@||instagram.com^$important
 @@||*.twimg.com^$important
 @@||*.cdninstagram.com^$important
@@ -401,7 +398,6 @@
 @@||dataprajna.net^$important
 @@||bmcx.com^$important
 @@||weixin.qq.com^
-@@||cn.bing.com^$important
 @@||img.zuoyebang.cc^$important
 @@||aliyun.com^
 @@||t5.a.market.xiaomi.com^$important
@@ -436,10 +432,10 @@
 @@||data.mistat.xiaomi.com^$important
 @@||mparticle.uc.cn^$important
 @@||dot.360.cn^$important
-@@||aliyuncs.com^^$important
-@@||eleme.cn^^$important
-@@||elemecdn.com^^$important
-@@||ele.me^^$important
+@@||aliyuncs.com^$important
+@@||eleme.cn^$important
+@@||elemecdn.com^$important
+@@||ele.me^$important
 @@||sug.browser.miui.com^
 @@||stat.api.4399.com^
 @@||wiki.ad-gone.com
@@ -480,7 +476,6 @@
 # Youtube
 @@||s.youtube.com^$important
 @@||s2.youtube.com^$important
-@@||youtu.be^$important
 @@||youtube-nocookie.com^$important
 @@||i.ytimg.com^$important
 @@||i1.ytimg.com^$important
@@ -1350,7 +1345,6 @@
 @@||alive.github.com
 @@||altap.cz
 @@||alternativeto.net
-@@||amd.com
 @@||android.clients.google.com
 @@||answers.microsoft.com
 @@||answersstaticfilecdnv2.azureedge.net
@@ -1478,31 +1472,11 @@
 @@||bankofamerica.com
 @@||battle.net
 @@||battlelog.battlefield.com
-@@||bbc.co.uk
-@@||bbc.com
 @@||behindthevoiceactors.com
 @@||beige.xboxservices.com
 @@||bethesda.net
 @@||bigw.com.au
-@@||bing.at
-@@||bing.ch
-@@||bing.co.uk
-@@||bing.com
-@@||bing.com.br
-@@||bing.cz
-@@||bing.es
-@@||bing.fi
-@@||bing.fr
-@@||bing.gr
-@@||bing.hu
-@@||bing.ie
-@@||bing.it
-@@||bing.no
-@@||bing.pl
-@@||bing.ru
-@@||bing.se
 @@||binglee.com.au
-@@||bit.ly
 @@||bitdefender.net
 @@||blackberry.com
 @@||blitz.mb-cosmos.com
@@ -2260,7 +2234,6 @@
 @@||msedge.api.cdp.microsoft.com
 @@||msftconnecttest.com
 @@||msftncsi.com
-@@||msn.com
 @@||mucp.api.account.microsoft.com
 @@||music.plus.google.com
 @@||music.samsung.com
@@ -2280,7 +2253,6 @@
 @@||newvirus.kaspersky.com
 @@||nexusmods.com
 @@||nginx.org
-@@||nike.com
 @@||nintendo.com
 @@||nintendo.com.au
 @@||nintendo.net
@@ -2520,16 +2492,6 @@
 @@||snapi.live.net
 @@||social.playstation.com
 @@||sonos.soundcloud.com
-@@||sony.co.nz
-@@||sony.co.uk
-@@||sony.com
-@@||sony.com.au
-@@||sony.com.hk
-@@||sony.com.sg
-@@||sony.de
-@@||sony.fr
-@@||sony.jp
-@@||sony.net
 @@||soundcheck.soundcloud.com
 @@||soundcloud.com
 @@||sourceforge.net
@@ -2632,7 +2594,6 @@
 @@||store-images.microsoft.com
 @@||store-images.s-microsoft.com
 @@||store-site-backend-static.ak.epicgames.com
-@@||store.acer.com
 @@||store.akamai.steamstatic.com
 @@||store.apple.com
 @@||store.cloudflare.steamstatic.com
@@ -2826,7 +2787,6 @@
 @@||yelp.com
 @@||yimg.com
 @@||youpornpremium.com
-@@||youtu.be
 @@||youtube-dl.org
 @@||youtube-nocookie.com
 @@||youtube-ui.l.google.com
