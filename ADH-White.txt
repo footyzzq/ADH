@@ -174,8 +174,9 @@
 @@||bigota.d.miui.com^$important
 @@||data.mistat.intl.xiaomi.com^$important
 @@||f8.market.xiaomi.com^$important
-@@||file.market.xiaomi.com^$importantcdn.ark.qq.com
-@@nileapi.market.xiaomi.com
+@@||file.market.xiaomi.com^$important
+@@||cdn.ark.qq.com^$important
+@@||weatherapi.market.xiaomi.com
 @@||cn.app.chat.xiaomi.net^$important
 @@||connect.rom.miui.com/generate_204^$important
 @@||m.video.xiaomi.com^$important
@@ -809,7 +810,6 @@
 @@||nanorep.com^
 @@||neo4j.com^
 @@||tags.tiqcdn.com
-
 @@||cdn-thumb.fds.api.xiaomi.com
 @@||bce.baidu.com
 @@||b.bdstatic.com
