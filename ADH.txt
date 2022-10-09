@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Checksum: xxtz4PNlwpJTEfw9wISp4w
 ! Title: My AdFilters
-! Version: 202203152008
-! Last Modified: 2022年08月9日 23:08
+! Version: 202210103269
+! Last Modified: 2022年10月10日 23:08
 
 ! 国内知名网站的内容农场
 ||cloud.tencent.com/developer/ask^$document
@@ -211,7 +211,6 @@
 ||bhweapon.cn$important
 ||effirst.com$important
 ||effirst.cn$important
-||uc.cn$important
 ||ubibibi.com$important
 ||tinypap.cn$important
 ||tinya1.cn$important
@@ -1098,6 +1097,19 @@
 ||15111223344.com^$important
 ||pdfer.cn^$important
 ||shiwan1688.cn^$important
+! ----------------------- 去除知乎广告 --------------------------
+||api.zhihu.com/commercial_api/launch_v2^
+||api.zhihu.com/commercial_api/real_time_launch_v2^
+|api.zhihu.com/ad-style-service/request
+|api.zhihu.com/fringe/ad
+||api.zhihu.com/appview/api/v4/answers/*/recommendations*hb_answer_ad=0
+||api.zhihu.com/answers/*/comments/featured-comment-ad
+||api.zhihu.com/moments*$replace=/\"adjson\"/\"adnull\"/s
+||api.zhihu.com/topstory/recommend*$replace=/\"adjson\"/\"adnull\"/s
+||api.zhihu.com/v4/questions/*/answers*$replace=/\"adjson\"/\"adnull\"/s
+||api.zhihu.com/people/self$replace=/\"vip_info\"/\"null_vip\"/s
+@@||www.zhihu.com/api/v4/search_v3
+
 !---------------------------------------------------------------
 ! Title: AdGuardHome分类规则 阿里相关
 ! 【哈罗单车】
@@ -1245,7 +1257,6 @@
 ||irs01.com
 ||*martrix_bbs.gif
 ||*martrix_bbs.jpg
-||01bz
 ||4r.c691t.cn
 ||buyujj.club^$important
 ||dioimg.net^$important
@@ -1393,12 +1404,696 @@
 ||packet.cf^$important
 ||v.jingwoxin.com/huobao/2114/index.html^$important
 ||v.jingwoxin.com^$important
-/cloud/aliyun/youhui.jpg
 ||www.qtlianmeng.com
 ||www.sxeimg.com^$important
 ||xiaoluoyl.com^$important
 ||bbs.sxshczs.cn^$important
 ||re.fddcpxg.cn^$important
+!-----------------------------cjx-annoyance-------------------------!
+!----------Union&third-party--------!
+||7moor.com^$third-party
+||2005net.net^$third-party
+||3jia5.com^$third-party
+||5251.net^$third-party
+||53kf.com^$third-party
+||54kefu.net^$third-party
+||5etv.com^$third-party
+||bobo.com^$third-party
+||cir-smart.baidu.com^
+||bjmantis.net^
+||crs.baidu.com^
+||goutong.baidu.com^
+||kuaishang.cn^$third-party
+||live800.com^$third-party
+||looyu.com^$third-party
+||lxbjs.baidu.com^$third-party
+||meiqia.com^$third-party
+||miduoke.net^$third-party
+||mylikechat.com^$third-party
+||openinstall.io^$third-party
+||pop800.com^$third-party
+||qiyukf.com^$third-party
+||soperson.com^$third-party
+||tawk.to^$third-party
+||webfunny.cn^$third-party
+||tui.cnzz.net^$third-party
+||wpa.b.qq.com/cgi/wpa.php?
+||zoosnet.net^$third-party
+||zoossoft.cn^$third-party
+||easyliao.com^$third-party
+||outbrain.com^$third-party
+!---------Specific blocking filters--------------!
+||025yimei.com/templets/default/js/swt.js
+||100xuexi.com/CssModel/botad.js
+||115img.com/static/pc/d_
+||126.net/caipiao/js2/dialog.js
+||126.net/caipiao/js2/index/homePop.js
+||163.com/special/*/bobo.html
+||163.com^*/boboData
+||17173.com/actapi/qiyu/
+||17173cdn.com^*/js/task/src/task/live/greenhand/
+||21sq.org/js/downloadbanner.js
+||360doc.com/js/index7/mask_index_yc.js
+||39.net/PictureLib/A/f76/20160825/org_749281.png
+||51credit.com/bbs/js/bbs-end-layer.js
+||51cto.com/iframe/get-station-ads
+||51liucheng.com/js/dialogLogin.js
+||51zxw.net/netclass/images/*_top.jpg
+||6pan.cc/ps/vip.jpg
+||a6.hujiang.com^$domain=~class.hujiang.com
+||ad.qn.img-space.com^
+||ali213.net/js/3g/newsdetail.js
+||alicdn.com/mtb/lib-smartbanner-
+||aoji.cn/default/looyu/
+||asp300.com/2017images/kefu.js
+||autohome.com.cn/news/$script
+||autohome.com.cn/vr/*?pvareaid=
+||autoimg.cn/Space/help/HelpRdTask.js
+||baidu.com/cms/lemmaconfig/baikeDynamic.
+||baidu.com/cms/lemmaconfig/navbarAd.
+||baidu.com^*/app/banner_
+||baidu.dj/u/upan/you.html
+||baike.com/newtop/news.html
+||bdstatic.com/searchbox/icms/searchbox/img/*.jpg
+||bdstatic.com/tb/img/icon_coo_operation_
+||bendibao.com/weixin_
+||bestpush.pconline.com.cn^
+||betteredu.net/js/pop_tuiguang_
+||bilibili.com/html/ads-index.js
+||bjsxt.com/statics/js/bjsxt/js.js
+||bjwj2y.com/JS/LsJS.aspx
+||blog.sina.com.cn/lm/mini/
+||bobo.com/special/mod-follow/
+||c-ctrip.com/ResUnionOnline/R3/float/floating_normal.min.js
+||caixin.com/file/content/js/mobile_news_app_banner.js
+||cctvpic.com/photoAlbum/templet/common/*/game_
+||chazidian.com/all/gg_
+||china.com/images/milapp
+||chinaacc.com/lamu/piao
+||chinacloudsites.cn/api/promotion?
+||chinanews.com/fileftp/2016/06/2016-06-13/U194P4T47D35171F967DT20160613093733.jpg
+||chinanews.com/fileftp/2016/08/2016-08-04/U194P4T47D36220F967DT20160804155100.jpg
+||chinatimes.com/ads/
+||cndns.com/incs/js/website_mobile.js
+||con-article.hjapi.com/v1/txs/
+||cpu.baidu.com^$third-party
+||ctfile.com/img/*ssp
+||daf-rs.com/imageViewer/wpAd
+||dahe.cn/indiboy/ads/
+||dangbei.net/img/db/downdangbei.gif
+||dilidili.wang/uploads/allimg/171227/1_1520203421.png
+||dmzj.com/module/js/float_code.js
+||dmzj.com/public/js/app_banner.js
+||docin.com/building/getAdvById.
+||duba.net/skins/2009/images/db300_250.gif
+||dwstatic.com^*/newsPopup/
+||dwstatic.com^*/sidebar.js
+||easteat.com/templets/default/images/media-top.png
+||eastmoney.com/Extends/GetReferralLinkJavaScriptObj
+||eastmoney.com/js/*Share.js
+||eastmoney.com/public/ad.tools.
+||eic.org.cn/api/Popup?
+||eic.org.cn^*/analytics
+||enet.com.cn/counter.php
+||ettoday.net/style/mobileweb2014/js/smartbanner/jquery.smartbanner.
+||ettoday.net/style/video-ad/
+||fengbuy.com/recommend-new.
+||fh21.com.cn/js/passport/createQuickMenu.js
+||forex.com.cn/index.php/Invoking/tanchukuang
+||forex.com.cn/statics/images/ewm.jpg
+||fydisk.com/images/showvip.gif
+||goodcome.com.tw/block/ad/rndtopad.php
+||gtimg.com/finance/js/st/p/news_ad_
+||gtimg.com/gamezone/2014index/images/600x75.jpg
+||gtimg.com/pingjs/ext2020/dc2017/dist/m_tips/tips.js
+||gz-chengkao.com/js/duo.js
+||hahamx.cn/images/banner/
+||hao123img.com/v4/MB/xU/jy/VY/YX/MBxUjyVYYX.js
+||heiguang.com/_r/2015/js/hrBottomBar.
+||hexun.com/2017-11-07/191534592.jpg
+||hexun.com/inc/popbox.aspx
+||hexun.com^*/appDplus
+||hjapi.com/v1/pageSoftText?
+||hjfile.cn/lib/hui/footer/0.1.0/footer.js
+||hjfile.cn/lib/uzhi/uzt.
+||hjfile.cn/site/hj-lzs/
+||hjfile.cn/site/js/pop_gift_plugin.js
+||house365.com/js/fixWin.php
+||howbuy.com/subject/js/jquery.blockUI.js
+||howbuy.com/subject/js/layer/layer.js
+||hujiang.com/Web/tx.ashx
+||iask.sina.com.cn/s-b/mxbg
+||iciba.com/static/images/download_banner.png
+||ifeng.com/uploadfiles/main_blog/main_child/v3_block
+||ifengimg.com/auto/js/*enquiry
+||ifengimg.com^*/red2018icon.
+||igo.cn/liuxue/js/slideBar
+||imall.cctv.com^
+||imall.cntv.cn^
+||ithome.com/block/headerline$subdocument
+||ithome.com/images/productgif/pcmaster.gif
+||ithome.com/images/v2.1/downsoftmaster.gif
+||jc001.cn/img/yhj.gif
+||jc001.cn/indexnew/js/yuyue.js
+||jia.com/js/common/jia-common.js
+||jia.com/js/tuku/footBanner_
+||jia.com/js/zixun/news.js
+||jia.com/js/zixun/zixun_
+||jianshe99.com/lamu/
+||kaoyan.com/__pub/shop_book.html
+||kaoyan.com/global/js/backtopnew.js
+||kaoyan.com/school/final_class.html
+||kaoyan.com/school/js/yz.school.packed.js
+||kekenet.com/images/*/app
+||kgimg.com/public/root//images/hardware.jpg
+||kongzhong.com/style/newindex/js/tad.js
+||koolearn.com/v2/js/*AD.js
+||koolearn.com/v2/js/wxewm.js
+||koolearn.com/www/subject/script/subject_form.js
+||koolearn.com/zt/poster_js/$domain=~www.koolearn.com
+||kuakao.com:6053/floatcard?
+||kuwo.cn/static/swf/xctg.swf
+||lofter.com/blogPhotoAd?
+||lofter.com/mailEntry.do?blogad
+||longzhu.com/i/api/videos/dailyRecommend?
+||me360.com/swt/swt.js
+||meilele.com/js/mll/baiduLabelRecommend.
+||mianwww.com/wp-content/uploads/2014/05/insigmaedu1.gif
+||mitbbs.com/img/app
+||mnks.cn/jk/appAD_
+||mtime.cn/library/*/ECommerce/GoodsAndFeatureCtrl.js
+||naajie.com/float.js
+||netease.com/f2e/auto/modules/float-ask-price/
+||netease.com/fz/interface/frontend/fz.do?pos=tongyong-
+||netease.com^*bobologo
+||neuralstemcell.com.cn/img/js.js
+||ntce.com/images/js/ntce_public.js
+||offcn.com/index.php?m=dbsource&c=call&a=get&id=75
+||offcn.com/offcnewm/
+||ol-img.com/channel/tuku/js/tukuPopup.js
+||pcauto.com.cn/forum/1508/intf7631.js
+||pcauto.com.cn/forum/autobbs/clubtl/
+||pchome.com.tw/js/fancybox/
+||pconline.com.cn/intf/hot_
+||pinggu.org/api/bbsgg.
+||pstatp.com/growth/mobile_list/image/bonus_
+||pstatp.com^*/bannersdk/
+||qhimg.com/static/5dcd236fc857be9c,5b391c33a0748022.js
+||qidian.com/Images/990x40_
+||qudao.com/common/minisite.js
+||qyer.com/qcross/home/ajax?action=banner
+||qyerstatic.com/common/models/common/component/footerBanner/
+||rjzxw.com/temp/index.files/logo2.gif
+||rrjc.com/home/seo/ad/
+||shejiben.com/common/libs/layer.js
+||shejiben.com/common/widgets/ui/*zb.js
+||shopping.udn.com/mall/cus/cat/OutWebAd.do?
+||showguide.cn/templets/*/qqcenter.js
+||showguide.cn/templets/*/sg-ad.js
+||sina.com.cn/1016/getPhones-
+||sina.com.cn^*/energypop.
+||sinaimg.cn/finance/*/hqMainTopBanner.js
+||sinaimg.cn/finance/*/sideQR
+||sinaimg.cn/finance/app2018/js/appbar.js
+||sinaimg.cn/finance/hq_finapp_ad/
+||sinaimg.cn/finance/ny_live*.js
+||sinaimg.cn/finance/wanghong_
+||sinaimg.cn/large/a518ed97jw1eu4mxubbe6j209q01e3ys.jpg
+||sinaimg.cn/mw690/005uyUwYjw1eocc98cbgag30gk02ygm9.gif
+||sinaimg.cn/tech/*/sidebar.js
+||sinaimg.cn^*/everyoneReading.js
+||soft4fun.net/wp-content/themes/arthemia/js/common_footer_min.js
+||soso.com/wenwen/i/ad/
+||soufunimg.com/common_m/m_public/js/wa
+||sp.qf.56.com^
+||taobao.com/api/data/v2/d9543feac7c9433a98bc85be3ba856b1.js
+||taobao.com/js/smartbanner/
+||tfg2.com/images/upfile/banner/
+||tianya.cn/shang/*/index.shtml
+||tianyaui.com/cms_fragments/res/*/bbs_include_mod.js
+||tianyaui.com/global/dashang/vip_seat/js/ds_vip_seat.js
+||to8to.com/assets/wap//common/widgets/appGuide/appGuide.
+||to8to.com/yezhu/zxbjWidget.
+||to8to.com^*_bottom_
+||toutiao.haotui.com/data/js/0.js
+||tq.cn/floatcard?
+||tsdmw.net/img01/MP3/pm_
+||tuyiyi.com/tuyiyi/m.js
+||tv002.com/img/down1_ssp1.gif
+||upaiyun.com/wp-content/uploads/2016/12/wenzhangyouce
+||w3cschool.cn/attachments/image/20170919/1505817817281252.jpg
+||wanwan.sina.com.cn/kb/
+||wanwan.sina.com.cn/sinasupersport/back/
+||wbiao.cn/common/adapi/
+||wbiao.cn/common/newsbannerAds/
+||wbiao.co/src2/js/expand/fudong/
+||webservice.360doc.com^
+||wingontravel.com/Static/headerfooter/Content/js/masterpage.
+||wumii.cn/ext/relatedItemsWidget
+||wuxibus.com/Image/title
+||xcar.com.cn/bbs/adfocus.js
+||xiaoma.com/kf.php?arg=
+||xiaoma.com/xiaoma/www/js/article_right
+||xnimg.cn^*/liveinc/rightlive.js
+||ye120.com/swt.js
+||ye120.com/zool.js
+||youdao.com/market/banner/banner
+||youdao.com/www/banner.html
+||yytcdn.com/js/common/widget/pcpusher.
+||zhiyoo.com/mplus/images/banner.jpg
+||zndsssp.dangbei.net^
+||zol-img.com.cn/star/image/star-banner2.gif
+||zol.com/index.php?c=ZolShopIndex
+||zp365.com/newhousered/hb-index-pop-
+||zuoyebang.cc/static/question/question/resource/QRCode_
+||zuoyebang.cc/zyb_4953cbb8a9a2332469592196c056a906.jpg
+||yuedu.baidu.com/hybrid/wkrec/search?
+||zhan.com^*/middle_ad_modal.js
+||dealmoon.com/build/js/www/home/activity-pop/index.
+||zglww.net/jsnew/pfkf.js
+||ld0766.com/index.php?m=call&id=10
+||sina.com.cn/other/src/app/SFANewVersionPop.js
+||qq.com/inc/utf8/nav/ad.htm
+||gtimg.com/finance/js/st/p/cms/ce56e2f3303d17b6.js
+||gtimg.com/finance/js/st/p/quotpage/maxcard_
+||med66.com/lamu/
+||51cto.com/edu/blog/*box.js
+||taisha.org/statics/js/pc2.0/common/form.bottom.
+||autoimg.cn/club/v1Content/images/heycar
+||china.cn/js/common/daniel_pop/
+||chinaacc.com/lamu/*dl-
+||chinaacc.com/lamu/*piao
+||xhd.cn/topic/leyu-piaofu/
+||zol.com.cn/index.php?c=Api_JumpApi&
+||jjwxc.net/adsmanage.
+||sinaimg.cn/tech/zcapp2018/zcapp.js
+||233.com/js/side.htm
+||soufunimg.com/homepage/new/*/buttomLayer.js
+||vuetifyjs.com/notify.json
+||qhres.com/static/b4f92ac067a4768b/v4/modules/footer.js
+||daniujiaoyu.com/js/zk
+||daniuxuexiao.org.cn/js/zk
+||weiyun.com/proxy/domain/boss.qzone.qq.com/fcg-bin/fcg_get_multiple_strategy?
+||aoji.cn/static/js/pushadv.js
+||aoji.cn/static/js/yiliao/ad_common.js
+||zx123.cn/templates/zx123cs/theme-2015/js/right_xh.js
+||people.com.cn/rmrb/tplimg/new.js
+||appledaily.hk/banners/subscription/
+||bilibili.com/x/web-interface/archive/special/recommend?aid=
+||lancdn.com/tmp3/GG_Notice.png
+||zhangzishi.cc/cdn-cgi/apps/
+||macx.cn/js/blockadblock.js
+||bestqikan.com/static/js/swt.js
+||51cto.com/js/activity_pop.js
+||kuakao.com/index.php?m=content&c=index&a=show_ad
+||qinxue100.com/qinxue/pc/js/add_js.js
+||hujiang.com/ciku/getDetailSoftText/
+||hujiang.com/ciku/getLesson
+||zbcdn.net/__uvjgyw/slb.default.js
+||sina.com.cn/other/src/sfc_app_sidebar.js
+||sinaimg.cn/cj/finance/forex/res/searchCallup.js
+||tsdm.live/weibo.html
+||28.com/public/js/w3c_float.js
+||kmf.com/da/do
+||daiyanbao.com/flash/md
+||banzou.name/qq/qq2.js
+||5888.tv/Js/topBanner.js
+||dfcfw.com/zndh/
+||jsdelivr.net/npm/live2d-
+||51offer.com/mod/public/talk/
+||51offer.com/pageData/getDataByModuleIdandKey.html?leadkey=adList&
+||chinalawedu.com/js/weixin/weixin.js
+||chinalawedu.com/js/zxkf.js
+||baidu.com/xpage/form/getform?id=wk_pc_skin
+||aixifan.com/static/*/appGuide/
+||icourse163.org/dwr/call/plaincall/CommonBean.obtain.dwr
+||3158.cn/min/webim.
+||3158.cn/static/js/fixbtm/
+||house365.com/im_show/imshow.js
+||qixin007.com/webbanner/
+||gamersky.com/wap/js/gs/gsAllOpenAppBtn.
+||meiju22.com/new/Public/gg.js
+||heibaizhibo.com/_nuxt/87a5efd04908651591f7.js
+||ymlykj.com/nuxt/static/liveBanner.jpg
+||jin10.com/assets/img/sites/index/vip_ad
+||jin10.com/news_service/static/config/details.config.
+||jmw.com.cn/m_v2/js/active.js
+||dyhjw.com/Public/v3/appdown/images/AppEntrance.png
+||chazidian.com/statics/images/wangke.jpg
+||sinaimg.cn/sports/20214c6d/20181128/880_110.png
+||cifnews.com/common/js/d/d/tea.js
+||cifnews.com/yuguo3.0/live_dynamic/js/live_dynamic.js
+||cifnews.com/ajax/adrequest/
+||7k7k.com/api/position/
+||7k7k.com/js/bg-img.js
+||6080.tv/public/js/m/uaredirectformobile.js
+||gliacloud.com/player/adgeek_teep
+||365xuet.com/assets/web/js/main.jsr_
+||17house.com/zt/style/pc/js/zt_
+||y3600.cc/20
+||zupulu.com/scripts/app/app.js
+||yunzhan365.com/resourceFiles/js/weixin-share.js
+||127.net/m/*/promPic.jpg
+||xyj321.com/static/xyj/js/foot_slide_bar_
+||xyj321.com/static/zx/js/zx-con-jsq_
+||sinaimg.cn/wap/project/blog_to_news_banner/
+||zikao365.com/upload/js/pfgg/
+||gaosan.com/js/b.js
+||igo99.cn/js/freetest.js
+||huobaowang.com/meeting/js/hbchat.
+||chinaacc.com/upload/*_mjy_
+||music.163.com^$domain=mvcat.com
+||offcn.com/index.php?m=dbsource&c=call&a=get&id=77
+||yizhibo.com/special/h5corner.html
+||feedou.com/nzq/style/pc/js/zt_bottom.js
+||66zhuang.com/public_2017/js/count-gou.js
+||xuexila.com^*-xxl.js
+||sogoucdn.com/translate/ssr/static/img/banner-
+||cls.cn/v2/web/ad?
+||aisixiang.com/images/*-20
+||yiihuu.com/assets/common/yh/js/yh.ad.
+||guokr.com/apis/flowingboard/item/guokrapp_
+||csdnimg.cn/common/redpack/redpack.js
+||w3cschool.cn/index/*Advert
+||sinaimg.cn/news/diversion/index2/static/js/index.
+||sinaimg.cn^*/pushDiversion*.js
+||msstatic.com/huya/main3/widget/DiyActLayer/DiyActLayer_*.js
+||iviewui.com/v1/*?name=
+||sinaimg.cn/news/article/article_qcode
+||niuacc.com/static/common/js/145.js
+||yyetss.com/static/modal.js
+||pcauto.com.cn/zt/*_dialog/cjx-pc-half_
+||thepaper.cn/bottomBanner_
+||iiikefu.com/wp-content/plugins/halfdata-green-popups/js/lepopup.js
+||51cto.com/home/web/js/new_login/iframe.js
+||sinaimg.cn/large/007drMcOly1gfnqzv8a7ij30xc02nwfr.jpg
+||mydrivers.com/2021/www/nianhuojie.png
+||sinaimg.cn^*/yyy_pop
+||tiexue.net/pic/tx_1220.jpg
+||gushiwen.org/getTicket.aspx
+||51cto.com/edu/center/js/interaction_iframe.js
+||jishulink.com/images/content/visitor-footer-
+||jishulink.com/images/activity/invite_
+||codenong.com/c1.js
+||zhenbuka*/statics/js/toastr/jquery.toast.js
+||iqiyi.com/js/common/mars_v.js
+||jsdelivr.net/gh/huang545/huang1111@1.0/bottom.png
+||pstatp.com/origin/137370002e7fbe11b296a
+||qcjycg.com/template/conch/asset/js/hl
+||above.tw/blog/wp-content/plugins/popups/public/assets/js/public.js
+||zhihu.com/sku/km_resource?token=feed-right-banner
+||sinaimg.cn/finance/stock/hq/src/popuptoapp.js
+||to8to.com/to8to_pc/common/modules/bottom_up_slide/
+||pconline.com.cn/global/footer/index.html
+||ali213.net/news/kx/ali213-kx-data.js
+||cnki.com.cn/cnki/js/adimgdetail.js
+||cnki.com.cn/cnki/js/adrightdetail.js
+||mydrivers.com^*/xianshitehui.png
+||mydrivers.com/m/images/v1/kkjapp_down.gif
+||ydstatic.com/fanyi/fanyi-ad-place/
+||feedou.com/nzq/style/pc/js/popbig.js
+||feedou.com/nzq/style/pc/js/zt_bottom.js
+||nxhh.net/gw/gw.js
+||kuaishang.com.cn^
+||docer.org/static/utils/jquery.min.js
+||terrynow.com^$csp=script-src 'self' * 'unsafe-eval'
+||kf.qingwk.com^
+||ypojie.com/wp-content/uploads/*.js
+||yxdm.*/js/ddetector.js
+||eng24.com/js_new/copyright_float.
+||gedu.org/js/meiqia_pc_groupmarket.
+||guozh.net/wp-content/plugins/eazy-ad-unblocker/
+||gdmm.com/api.php?mod=js&bid=2188
+||jlwz.cn/js/xf*.js
+||book118.com^*/js/crm.
+||book118.com^*/showRecommend.
+||mbalib.com/common/a_mbalib/
+||lotuscard.cc/online/
+||kuke99.com/static/home/js/index/index.js
+||fulitech.com.cn^*/float.js
+||php.cn/upload/course/
+||huanqiucdn.cn/huanqiu/js/www/common/detected_block.
+||yaozh.com/Public/js/widget/dbAdDownload.
+||kandaju.net/js/js2.
+||biancheng.net/templets/new/images/index_pc/fudaoban_
+!------------------URL Whitelist------------------!
+@@||th7.cn/sanda2015/css/ads.js
+@@||lancdn.com/landian/public/js/ads.js
+@@||qbox.me/static/js/ads.js$domain=linux.cn
+@@/adview_pic_$domain=doutula.com|fastadmin.net|toolfk.com|xclient.info
+@@||fm.ipinyou.$domain=ipinyou.com.cn
+@@||fm.p0y.cn^$domain=ipinyou.com.cn
+!-----------------Tracking Systems-------------!
+||3158.cn^*_analyser.
+||wujiupic.com^
+||video.qq.com/checktime?
+||cdn-data-cloud.com/history/
+||s.ssl.qhres2.com/ssl/
+||pstatp.com^*/push.js
+||pv.cheshi.com^
+||tracking.kdnet.net^
+||lnd.com.cn/sys/real_calc.js
+||sogou.com/dr/p1.gif
+||stat.jc001.cn^
+||ip.tianqiapi.com^
+||count.nuanyuehanxing.com^
+||pconline.com.cn/ipJson.
+||develenv.com^$third-party
+||syzjxz2018.cn^
+||gog.cn/sys/online_calc.js
+||ip.ws.126.net^$domain=~fxingw.com
+||dhgxl8qk9zgzr.cloudfront.net/js/log.js
+||optimix.cn^$third-party
+||bdp.cn^$third-party
+||126.net^*analysis
+||zol.com.cn/pvn/
+||map.baidu.com^$domain=laosiji.com
+||laosiji.com/static/js/lib/od_statistics.js
+||100bt.com/dc?Url
+||113.105.248.169^
+||115img.com/static/115tj.js
+||123cha.com/counter.js
+||218.30.15.193/phpstat/count/
+||28.com/count.js
+||28.com/countnew.js
+||39.net/js/wt.js
+||51.la^$third-party
+||5173.com/__tra.gif?
+||51la.net^$third-party
+||58cdn.com.cn/resource/xxzl/xxfw/
+||8cnd.com^
+||91160.com/nykj/f=static/v4/common/tj.js
+||a-m-s.adnonstop.com^
+||a.tbcdn.cn/s/ac.js
+||a.tbcdn.cn/s/atp.js
+||a.tbcdn.cn/s/tb-tracer-min.js
+||abab.com/pv.js
+||acookie.*.gif?
+||agrantsem.com/js/ag.js
+||analy.tuniu.cn^
+||analyse.weather.com.cn^
+||analysis.chinaiiss.com^
+||analytics-union.sandai.net^
+||analytics-union.xunlei.com^
+||analytics.21cn.com^
+||analytics.techweb.com.cn^
+||analytics.tv189.cn^
+||api.cupid.qiyi.com/etx?
+||api.cupid.qiyi.com/track2
+||apistat.gao7.com^
+||apistat.wasu.cn^
+||apple.www.letv.com/env/?
+||ark.letv.com/t?
+||atpanel.com^$image
+||autohome.com.cn/risk_fp_log?
+||autoimg.cn/bi/mda/ahas_body.
+||baidu.com/4.gif?
+||baidu.com/smalllog/
+||baidu.com^*/w.gif?
+||bdstatic.eastmoney.com^
+||bendibao.com/js/count.js
+||bitauto.com/bglog.gif?
+||bshare.cn/bshare_view?Callback=
+||bt.ktxp.com/iframe/statistics.js
+||btdb.in/beacon.html
+||btime.com/api/weblog?
+||bytecdn.cn/ta/resource/v0/analytics.js
+||ca.cbsi.com.cn/rpv?
+||carstat.bitauto.com^
+||cbjg.cqnews.net^
+||cbsi.com.cn/js/mlt.js
+||ccoo.cn/mystat.asp
+||cdnlog.zhenai.com^
+||cheshi-img.com/js/pv.min.js
+||chinatimes.com/analytics/
+||chouti.com/js/tingyun-rum.js
+||cig.com.cn^$third-party
+||cjyun.org/assets/js/analytics.js
+||click.tianyaui.com^
+||cnfol.com/Count.html
+||cnmo.com/pv.js
+||cnpc.infzm.com^
+||comm100.cn/livechatserver/chatbutton.*&res=
+||count.candou.com^
+||count.enet.com.cn^
+||count.iyaxin.com^
+||count.pcauto.com.cn^
+||count.pcgames.com.cn^
+||counter.pcauto.com.cn^
+||counter.tianjimedia.com^
+||countpage.sznews.com^
+||cpms.now.com^
+||damai.cn/phpstat/
+||data.xici.net^
+||dcs.conac.cn/js/
+||dfcfw.com/libs/js/counter.js
+||dianping.com/hippo.gif?
+||dig.qbao.com^
+||doc88.com^*/count.js
+||dp3.qq.com/qqcom/
+||duba.com/static/*/js/min.pop.js
+||dw.xcar.com.cn^*.gif?
+||ea3w.com/pv.js
+||eastmoney.com/analysis/
+||ejieban.com^
+||fcm.baidu.com^
+||fengniao.com*/pv.js
+||fjsen.com:81/mysql/count/
+||frame.enet.com.cn/a.php
+||fx678.com/htcount/count.js
+||gridsumdissector.cn/gs.gif?
+||guahao.cn/blank.gif?
+||hao123img.com/res/js/track.js
+||hc360.com/js/module/common/logrecordservice.
+||hdslb.com/js/bfd.js
+||hexun.com/js/att_count.js
+||hiido.com^$third-party
+||hm.baidu.com/mkt.js
+||hupu.com/_dace.gif?
+||house365.com/js/analyze.js
+||hz.youku.com/red/
+||iciba.com/web/static/scripts/kds2_record.js
+||icon.zol-img.com.cn/mainpage/js/click.js
+||ifengimg.com^*/sta_collection
+||img.kuai.xunlei.com/js/statistics.js
+||imp.zol.com.cn^
+||iqiyi.com/etx?
+||iqiyi.com/js/pingback/
+||iqiyi.com/track
+||isdspeed.qq.com^
+||it168.com/pv.js
+||itc.cn/cache/lib/v2/odvmonitor/
+||itc.cn/hdpv.js
+||itc.cn^*/tracker.js
+||itsmore.cn^$third-party
+||js.passport.qihucdn.com/11.0.1.js
+||kaipuyun.cn/count/
+||kkpgv2.xunlei.com^
+||l.ykimg.com^
+||ll.hudong.com^
+||log.daqi.com^
+||log.mtime.cn^
+||log.music.baidu.com^
+||log.vdisk.cn^
+||log2.mtime.cn^
+||lotour.net/analytics/statsv2.js
+||mafengwo.cn/uva/i.gif?
+||mixer.sina.cn^
+||mlog.aipai.com^
+||msg.ettoday.net^
+||msg.iqiyi.com^
+||msg.video.qiyi.com^
+||msn.ynet.com/c/tj_comm.js
+||news.cn/pc-log?
+||newspage.xilu.com/model/visitlog.js
+||nmgnews.com.cn/sys/online_calc.js
+||nsclick.baidu.com^
+||olpv.onlylady.com^
+||optaim.com^$third-party
+||other.v.duowan.com^
+||p0y.cn^
+||p2p.v.yyclouds.com/crossdomain.xml
+||pconline.com.cn/count.php?
+||pcpop.com/pv/pv.js
+||playstats.v.duowan.com^
+||push.zhanzhang.baidu.com/push.js
+||pv.zhiding.cn^
+||pvtest.zol.com.cn^
+||qdp.qidian.com^
+||qhimg.com/clk.gif?
+||qhimg.com/js/iwt.js
+||qunar.com/js/ga.min.js
+||qunar.com/render/ga.jsp?
+||qunar.com/render/googlesem.jsp
+||qyer.com^*/base_beacon_ga.js
+||qzwb.com/phpstat/
+||record.kuai.xunlei.com^
+||reportlog.dftoutiao.com^
+||runsky.com/phpstat/
+||s-msn.com/portal/js/vendor/manto/
+||s.btime.com^
+||s.so.360.cn^
+||s.union.360.cn^
+||sina.cn*/view?
+||sohu.com/mail/pv/
+||stat.2u.com.cn/ol_2u.js
+||stat.baike.com^
+||stat.cnmo.com^
+||stat.cqwb.com.cn^
+||stat.cutv.com^
+||stat.download.xunlei.com^
+||stat.ea3w.com^
+||stat.game.yy.com^
+||stat.hebnews.cn^
+||stat.hkwb.net^
+||stat.house365.com^
+||stat.ijinshan.com^
+||stat.img-space.com^
+||stat.mql5.com^
+||stat.pchome.net^
+||stat.timedg.com^
+||stat.ts.cn^
+||stat.v.17173.com^
+||stat.xgo.com.cn^
+||stat.yunfan.com^
+||static.gridsumdissector.com^
+||static.youku.com/*/index/js/iresearch.js
+||static.youku.com/*/js/cps.js
+||static.zongheng.com^*/ad_click.js
+||static.zongheng.com^*/adClickStat.js
+||static.zongheng.com^*/logger.min.js
+||statis1.mama.cn^
+||stats.766.com^
+||stats.v.duowan.com^
+||suning.cn/javascript/sn_da/sa.js
+||sxrb.com/front/stat/
+||ta.trs.cn^$third-party
+||tajs.qq.com^
+||tcss.qq.com^
+||tingyun.com^$third-party
+||tj.21ic.com^
+||tjj.com^
+||trends.com.cn/k.js
+||tw.rd.yahoo.com^$image
+||uedas.$domain=qdmm.com|qdwenxue.com|qidian.com
+||uuu9.com/photolog.html
+||vm.aty.sohu.com^
+||wlxww.com/html/analytics/
+||xgo.com.cn/pv.js
+||xls.go.sohu.com^
+||xs8.cn/qreport?
+||xunlei.com/api/stat/rt/js?
+||yaolan.com/ylk.mini.js
+||ynet.com/c/js/manto.min.js
+||youdao.com/ctlog?
+||youdao.com/rlog.php
+||youdao.com/tl?
+||ysont.cn^
+||zdnet.com.cn/js/pv.js
+||zdw.w8.com.cn/p.ht?
+||zhulang.com/zlpv.php
+||zol.com.cn/cgimp/zc.js
+
 #屏蔽百度及admob广告：
 127.0.0.1 mobads.baidu.com
 127.0.0.1 mobads-logs.baidu.com
@@ -1472,63 +2167,1103 @@
 127.0.0.1  ad.leadbolt.net
 #2014.1.24更新添加
 127.0.0.1 media.mydas.mobi
-#受不了小米
-127.0.0.1 api.miwifi.com
-127.0.0.1 s.miwifi.com
-127.0.0.1 ad.mi.com
-127.0.0.1 ad.xiaomi.com
-127.0.0.1 ad1.xiaomi.com
-127.0.0.1 tat.pandora.xiaomi.com
-127.0.0.1 api.ad.xiaomi.com
-127.0.0.1 t7z.cupid.ptqy.gitv.tv
-127.0.0.1 ad.xiaomi.com
+#---------------------------------------------
+127.0.0.1 livew.l.qq.com #-> 腾讯视频
+127.0.0.1 t7z.cupid.iqiyi.com #-> 爱奇艺
+127.0.0.1 wxsnsdy.wxs.qq.com #-> 微信
+#---------------------------------------------
+#--下列会影响奖励形式的广告(小程序\小游戏等)
+127.0.0.1 is.snssdk.com
+127.0.0.1 adsmind.gdtimg.com
+127.0.0.1 pv.sohu.com
+127.0.0.1 gw.365you.com
+127.0.0.1 x.adnet.qq.com
+127.0.0.1 mi.gdt.qq.com
+127.0.0.1 c.gdt.qq.com
+127.0.0.1 d.gdt.qq.com
+127.0.0.1 i.gdt.qq.com
+127.0.0.1 m.gdt.qq.com
+127.0.0.1 t.gdt.qq.com
+127.0.0.1 v.gdt.qq.com
+127.0.0.1 q.i.gdt.qq.com
+127.0.0.1 v2.gdt.qq.com
+127.0.0.1 ii.gdt.qq.com
+127.0.0.1 rm.gdt.qq.com
+127.0.0.1 nc.gdt.qq.com
+127.0.0.1 vr.gdt.qq.com
+127.0.0.1 rpt.gdt.qq.com
+127.0.0.1 win.gdt.qq.com
+127.0.0.1 ipv4.gdt.qq.com
+127.0.0.1 v6ii.gdt.qq.com
+#pkg=ad.xiaomi.com;视频客户端广告
+#--小米视频-MIUI
+127.0.0.1 video.market.xiaomi.com
+127.0.0.1 t1.a.market.xiaomi.com
+127.0.0.1 t2.a.market.xiaomi.com
+127.0.0.1 t3.a.market.xiaomi.com
+127.0.0.1 t4.a.market.xiaomi.com
+127.0.0.1 t5.a.market.xiaomi.com
+127.0.0.1 t6.a.market.xiaomi.com
+127.0.0.1 nav.browser.miui.com
+127.0.0.1 security.browser.miui.com
 127.0.0.1 api.ad.xiaomi.com
 127.0.0.1 sdkconfig.ad.xiaomi.com
-127.0.0.1 stat.pandora.xiaomi.com
-127.0.0.1 upgrade.mishop.pandora.xiaomi.com
-127.0.0.1 logonext.tv.kuyun.com
-127.0.0.1 config.kuyun.com
-127.0.0.1 mishop.pandora.xiaomi.com
-127.0.0.1 dvb.pandora.xiaomi.com
-127.0.0.1 api.ad.xiaomi.com
-127.0.0.1 de.pandora.xiaomi.com
-127.0.0.1 data.mistat.xiaomi.com
-127.0.0.1 jellyfish.pandora.xiaomi.com
-127.0.0.1 gallery.pandora.xiaomi.com
-127.0.0.1 bss.pandora.xiaomi.com
-127.0.0.1 gvod.aiseejapp.atianqi.com
-127.0.0.1 sdkauth.hpplay.cn
-127.0.0.1 adeng.hpplay.cn
-127.0.0.1 ad.hpplay.cn
-127.0.0.1 conf.hpplay.cn
-127.0.0.1 fix.hpplay.cn
-127.0.0.1 adcdn.hpplay.cn
-127.0.0.1 sl.hpplay.cn
-127.0.0.1 rp.hpplay.cn
-127.0.0.1 h5.hpplay.com.cn
-127.0.0.1 hpplay.cdn.cibn.cc
-127.0.0.1 sdkauth.hpplay.cn
-127.0.0.1 imdns.hpplay.cn
-127.0.0.1 vipauth.hpplay.cn
-127.0.0.1 rp.hpplay.cn
-127.0.0.1 sl.hpplay.cn
-127.0.0.1 519332DA.rtc.youme.im
-127.0.0.1 hotupgrade.hpplay.
-127.0.0.1 pin.hpplay.cn
-127.0.0.1 tvapp.hpplay.cn
-127.0.0.1 hpplay.cdn.cibn.cc
-127.0.0.1 image.hpplay.cn
-127.0.0.1 gslb.hpplay.cn
-127.0.0.1 rp.hpplay.cn
-127.0.0.1 cdn.hpplay.com.cn
-127.0.0.1 h5.hpplay.com.cn
-127.0.0.1 adeng.hpplay.cn
-127.0.0.1 conf.hpplay.cn
-127.0.0.1 adcdn.hpplay.cn
+127.0.0.1 m.track.ad.xiaomi.com
+127.0.0.1 t.track.ad.xiaomi.com
+127.0.0.1 irs01.com
+127.0.0.1 s.irs03.com
+127.0.0.1 s1.irs03.com
+127.0.0.1 397c0.admaster.com.cn
+127.0.0.1 clickc.admaster.com.cn
+127.0.0.1 v.admaster.com.cn
+127.0.0.1 ppvabs.pplive.com
+127.0.0.1 cdn.ad.xiaomi.com
+127.0.0.1 e.ad.xiaomi.com
+127.0.0.1 log.ad.xiaomi.com
+127.0.0.1 zeus.ad.xiaomi.com
+127.0.0.1 test.ad.xiaomi.com
+127.0.0.1 test.e.ad.xiaomi.com
+127.0.0.1 test.zeus.ad.xiaomi.com
+127.0.0.1 abtest.mistat.xiaomi.com
+127.0.0.1 api.tw06.xlmc.sec.miui.com
+127.0.0.1 adv.sec.miui.com
+127.0.0.1 vt.ipinyou.com
+127.0.0.1 diagnosis.ad.xiaomi.com
+127.0.0.1 msg.71.am
+127.0.0.1 msg.qy.net
+127.0.0.1 resolver.msg.xiaomi.net
+127.0.0.1 api.ts.feedback.71.am
+127.0.0.1 bj.imp.voiceads.cn
+127.0.0.1 o2o.api.xiaomi.com
+127.0.0.1 xiaomi.m.cn.miaozhen.com
+127.0.0.1 xiaomi-dtv.m.cn.miaozhen.com
+127.0.0.1 baiducdncmn3.inter.iqiyi.com
+127.0.0.1 nadvideo2.baidu.com
+#--爱奇艺-Qiyi
+127.0.0.1 api.cupid.iqiyi.com
+127.0.0.1 api.yuedu.iqiyi.com
+127.0.0.1 c.uaa.iqiyi.com
+127.0.0.1 cloudpush.iqiyi.com
+127.0.0.1 cm.passport.iqiyi.com
+127.0.0.1 gamecenter.iqiyi.com
+127.0.0.1 ifacelog.iqiyi.com
+127.0.0.1 mbdlog.iqiyi.com
+127.0.0.1 msg.iqiyi.com
+127.0.0.1 msga.cupid.iqiyi.com
+127.0.0.1 nl.notice.iqiyi.com
+127.0.0.1 notice.iqiyi.com
+127.0.0.1 policy.video.iqiyi.com
+127.0.0.1 static.g.iqiyi.com
+127.0.0.1 store.iqiyi.com
+127.0.0.1 nl.rcd.iqiyi.com
+127.0.0.1 emoticon.sns.iqiyi.com
+127.0.0.1 hotchat-im.iqiyi.com
+127.0.0.1 tracker.sns.iqiyi.com
+127.0.0.1 paopao.iqiyi.com
+127.0.0.1 paopao-monitor.iqiyi.com
+127.0.0.1 paopao0.qiyipic.com
+127.0.0.1 paopao1.qiyipic.com
+127.0.0.1 paopao2.qiyipic.com
+127.0.0.1 paopao3.qiyipic.com
+127.0.0.1 count.game.pps.tv
+127.0.0.1 game.pps.tv
+127.0.0.1 static.g.ppstream.com
+127.0.0.1 qosp.msg.71.am
+127.0.0.1 msga.71.am
+127.0.0.1 androidgo.duapp.com
+127.0.0.1 noxagile.duapp.com
+127.0.0.1 api.cupid.qiyi.com
+127.0.0.1 msg.video.qiyi.com
+127.0.0.1 msg2.video.qiyi.com
+127.0.0.1 t7z.cupid.ptqy.gitv.tv
 127.0.0.1 g.dtv.cn.miaozhen.com
-127.0.0.1 android.bugly.qq.com
+127.0.0.1 baiducdncmn.inter.iqiyi.com
+127.0.0.1 msgv6.qy.net
+127.0.0.1 api.ts.feedback.qy.net
+127.0.0.1 puma.api.iqiyi.com
+127.0.0.1 puma-api.iqiyi.com
+127.0.0.1 rd596n.jomodns.com
+127.0.0.1 baiducdncmn-gd.inter.iqiyi.com
+127.0.0.1 bdcdncmn-gd.inter.71edge.com
+127.0.0.1 mixer.cupid.ptqy.gitv.tv
+127.0.0.1 msg.ptqy.gitv.tv
+#--腾讯视频-Tencent
+127.0.0.1 aiseet.aa.atianqi.com
+127.0.0.1 livep.l.aiseet.atianqi.com
+127.0.0.1 lives.l.aiseet.atianqi.com
+127.0.0.1 lives.l.ott.video.qq.com
+127.0.0.1 dp3.play.aiseet.atianqi.com
+127.0.0.1 p-l.play.aiseet.atianqi.com
+127.0.0.1 t-l.play.aiseet.atianqi.com
+127.0.0.1 news-l.play.ott.video.qq.com
+127.0.0.1 omgmta.play.ott.video.qq.com
+127.0.0.1 andrqd.play.aiseet.atianqi.com
+127.0.0.1 otheve.play.aiseet.atianqi.com
+127.0.0.1 othstr.play.aiseet.atianqi.com
+127.0.0.1 omgmta.play.aiseet.atianqi.com
+127.0.0.1 mtrace.play.aiseet.atianqi.com
+127.0.0.1 btrace.play.aiseet.atianqi.com
+127.0.0.1 news-l.play.aiseet.atianqi.com
+127.0.0.1 sdkconfig.play.aiseet.atianqi.com
+127.0.0.1 monitor-uu.play.aiseet.atianqi.com
+127.0.0.1 mdevstat.qqlive.qq.com
+127.0.0.1 tencent-dtv.m.cn.miaozhen.com
+127.0.0.1 vmindhls.tc.qq.com
+127.0.0.1 c.l.qq.com
+127.0.0.1 bs.l.qq.com
+127.0.0.1 c2.l.qq.com
+127.0.0.1 cb.l.qq.com
+127.0.0.1 cm.l.qq.com
+127.0.0.1 hm.l.qq.com
+127.0.0.1 l.qq.com
+127.0.0.1 l2.l.qq.com
+127.0.0.1 lb.l.qq.com
+127.0.0.1 livec.l.qq.com
+127.0.0.1 livem.l.qq.com
+127.0.0.1 livep.l.qq.com
+127.0.0.1 lives.l.qq.com
+127.0.0.1 ls.l.qq.com
+127.0.0.1 p2.l.qq.com
+127.0.0.1 p3.l.qq.com
+127.0.0.1 t.l.qq.com
+127.0.0.1 vd.l.qq.com
+127.0.0.1 w.l.qq.com
+127.0.0.1 news.l.qq.com
+127.0.0.1 mcgi.v.qq.com
+127.0.0.1 soup.v.qq.com
+127.0.0.1 bksoup.v.qq.com
+#--搜狐视频-Sohu
+127.0.0.1 sohu-dtv.m.cn.miaozhen.com
+127.0.0.1 agn.aty.snmsohu.aisee.tv
+127.0.0.1 agn.aty.sohu.com
+127.0.0.1 f.aty.sohu.com
+127.0.0.1 m.aty.sohu.com
+127.0.0.1 fmg.aty.sohu.com
+127.0.0.1 mmg.aty.sohu.com
+127.0.0.1 p.aty.sohu.com
+127.0.0.1 pg.aty.sohu.com
+127.0.0.1 pm.aty.sohu.com
+127.0.0.1 v.aty.sohu.com
+127.0.0.1 vg.aty.sohu.com
+127.0.0.1 vm.aty.sohu.com
+127.0.0.1 da.mmarket.com
+127.0.0.1 click.hd.sohu.com.cn
+127.0.0.1 click2.hd.sohu.com
+127.0.0.1 count.vrs.sohu.com
+127.0.0.1 ctr.hd.sohu.com
+127.0.0.1 pb.hd.sohu.com.cn
+127.0.0.1 pv.hd.sohu.com
+127.0.0.1 vstat.my.tv.sohu.com
+127.0.0.1 vstat.v.blog.sohu.com
+127.0.0.1 wl.hd.sohu.com
+127.0.0.1 download.wan.sohu.com
+127.0.0.1 g.jssdk.net
+127.0.0.1 changyan.sohu.com
+#--乐视视频-Letv
+127.0.0.1 n.mark.letv.com
+127.0.0.1 static.app.m.letv.com
+127.0.0.1 test.ark.letv.com
+#--PP视频-PPTV
+127.0.0.1 de.as.cp61.ott.cibntv.net
+127.0.0.1 lives.l.cp81.ott.cibntv.net
+127.0.0.1 mtrace.play.cp81.ott.cibntv.net
+127.0.0.1 ad.advst.cp33.ott.cibntv.net
+127.0.0.1 sltint.adv.ott.cibntv.net
+127.0.0.1 topapi.cp12.ott.cibntv.net
+127.0.0.1 ad.video.51togic.com
+127.0.0.1 ssp.cibn.starschina.com
+127.0.0.1 clickc.admaster.com.cn
+127.0.0.1 vpptv.admaster.com.cn
+127.0.0.1 pptv.m.cn.miaozhen.com
+127.0.0.1 ads.aplus.pptv.com
+127.0.0.1 app.aplus.pptv.com
+127.0.0.1 as.aplus.pptv.com
+127.0.0.1 de.as.pptv.com
+127.0.0.1 jp.as.pptv.com
+127.0.0.1 static.g.pptv.com
+127.0.0.1 tj.g.pptv.com
+127.0.0.1 ads.data.pplive.com
+127.0.0.1 gas.data.pplive.com
+127.0.0.1 plt.data.pplive.com
+127.0.0.1 web.data.pplive.com
+#--芒果TV-Mgtv
+127.0.0.1 mobile.da.mgtv.com
+127.0.0.1 mobile2.da.mgtv.com
+127.0.0.1 ott.da.mgtv.com
+127.0.0.1 ott2.da.mgtv.com
+127.0.0.1 ott3.da.mgtv.com
+127.0.0.1 ott-v0-al.data.mgtv.com
+127.0.0.1 ott.v1.data.mgtv.com
+127.0.0.1 ys.da.mgtv.com
+127.0.0.1 ynet.da.mgtv.com
+127.0.0.1 pc.da.mgtv.com
+127.0.0.1 pc1.da.mgtv.com
+127.0.0.1 pcweb-v1.log.mgtv.com
+127.0.0.1 pcweb.v1.mgtv.com
+127.0.0.1 py.da.mgtv.com
+127.0.0.1 v1-play.log.mgtv.com
+127.0.0.1 v2.da.mgtv.com
+127.0.0.1 v2.log.mgtv.com
+127.0.0.1 web.da.mgtv.com
+127.0.0.1 x.da.mgtv.com
+127.0.0.1 y.da.mgtv.com
+127.0.0.1 zx.da.mgtv.com
+127.0.0.1 apperr.log.mgtv.com
+127.0.0.1 m2.da.mgtv.com
+127.0.0.1 m.da.mgtv.com
+#--央视影音-CNTV
+127.0.0.1 cws-cctv.conviva.com
+127.0.0.1 galaxy.bjcathay.com
+127.0.0.1 rtas.videocc.net
+127.0.0.1 a.cntv.cn
+127.0.0.1 ad.cctv.com
+127.0.0.1 adguanggao.eee114.com
+127.0.0.1 cctv.adsunion.com
+127.0.0.1 adstore-1252524079.file.myqcloud.com
+127.0.0.1 adstore-index-1252524079.file.myqcloud.com
+#--风行&酷喵-FunShion
+127.0.0.1 aa0.pub.funshion.com
+127.0.0.1 aa1.pub.funshion.com
+127.0.0.1 adm.funshion.com
+127.0.0.1 conf.funshion.com
+127.0.0.1 pub.funshion.com
+127.0.0.1 vs.funshion.com
+127.0.0.1 rt.funshion.net
+127.0.0.1 stat.funshion.net
+127.0.0.1 fun.adx.admaster.com.cn
+127.0.0.1 ykad-gateway.youku.com
+127.0.0.1 ykugc.cp31.ott.cibntv.net.302.myalicdn.com
+127.0.0.1 vali.cp31.ott.cibntv.net.302.myalicdn.com
+127.0.0.1 youku-dtv.m.cn.miaozhen.com
+127.0.0.1 m.atm.youku.com
+127.0.0.1 ipm.atm.youku.com
+127.0.0.1 orange-dc.youku.com
+127.0.0.1 youku-acs.m.taobao.com
+127.0.0.1 video-ad.sm.cn
+127.0.0.1 rest.irs01.com
+127.0.0.1 px.ucweb.com
+127.0.0.1 huichuan.sm.cn
+127.0.0.1 timeserver.cnzz.net
+127.0.0.1 val.atm.youku.com
+127.0.0.1 ykad-data.youku.com
+127.0.0.1 yk-ssp.ad.youku.com
+127.0.0.1 adashx.ut.youku.com
+127.0.0.1 adx-open-service.youku.com
+127.0.0.1 h-adashx.ut.youku.com
+#--咪咕|土豆|人人|凤凰|等等……
+127.0.0.1 ggx.cmvideo.cn
+127.0.0.1 adxserver.ad.cmvideo.cn
+127.0.0.1 openstorage.ad.cmvideo.cn
+127.0.0.1 ggx01.miguvideo.com
+127.0.0.1 ggx02.miguvideo.com
+127.0.0.1 ggx10.miguvideo.com
+127.0.0.1 dcads.sina.com.cn
+127.0.0.1 acs.56.com
+127.0.0.1 acs.agent.56.com
+127.0.0.1 acs.agent.v-56.com
+127.0.0.1 bill.agent.56.com
+127.0.0.1 bill.agent.v-56.com
+127.0.0.1 stat.56.com
+127.0.0.1 stat2.corp.56.com
+127.0.0.1 union.56.com
+127.0.0.1 v16.56.com
+127.0.0.1 pole.6rooms.com
+127.0.0.1 shrek.6.cn
+127.0.0.1 simba.6.cn
+127.0.0.1 union.6.cn
+127.0.0.1 mcfg.sandai.net
+127.0.0.1 biz5.sandai.net
+127.0.0.1 3.iscrv.com
+127.0.0.1 www.wjxcdn.com
+127.0.0.1 adsmis.duxiaoman.com
+127.0.0.1 ebp.renren.com
+127.0.0.1 bolt.jebe.renren.com
+127.0.0.1 static.jebe.renren.com
+127.0.0.1 xray.jebe.renren.com
+127.0.0.1 pat.farvd.com
+127.0.0.1 dc.sigmob.cn
+127.0.0.1 cdn.adm.myhayo.com
+127.0.0.1 engine.tuia.cn
+127.0.0.1 ad-cache.dopool.com
+127.0.0.1 analytics3.dopool.com
+127.0.0.1 analytics3.starschina.com
+127.0.0.1 app.starschina.com
+127.0.0.1 ssp.tadseeker.com
+127.0.0.1 ad.molitv.cn
+127.0.0.1 vyk.admaster.com.cn
+127.0.0.1 ems.cp12.wasu.tv
+127.0.0.1 pl.cp12.wasu.tv
+127.0.0.1 valatm.cp12.wasu.tv
+127.0.0.1 adlog.molitv.cn
+127.0.0.1 ipmatm.cp12.wasu.tv
+127.0.0.1 topapi.cp12.wasu.tv
+127.0.0.1 adservice.sigmob.cn
+127.0.0.1 stadig.ifeng.com
+127.0.0.1 api.newad.ifeng.com
+127.0.0.1 ifengad.3g.ifeng.com
+127.0.0.1 adv.fjtv.net
+127.0.0.1 dsa-mfp.fengshows.cn
+127.0.0.1 sdk.cferw.com
+#pkg=youtube.com;youtube去广告服务
+127.0.0.1 ads.doubleclick.net
+127.0.0.1 s.ytimg.com
+127.0.0.1 ad.youtube.com
+127.0.0.1 ads.youtube.com
+127.0.0.1 clients1.google.com
+127.0.0.1 dts.innovid.com
+127.0.0.1 googleads4.g.doubleclick.net
+127.0.0.1 pagead2.googlesyndication.com
+127.0.0.1 pixel.moatads.com
+127.0.0.1 rtd.tubemogul.com
+127.0.0.1 s.innovid.com
+127.0.0.1 pubads.g.doubleclick.net
+127.0.0.1 ssl.google-analytics.com
+127.0.0.1 www-google-analytics.l.google.com
+127.0.0.1 stats.g.doubleclick.net
+127.0.0.1 clients.l.google.com
+127.0.0.1 pagead.l.doubleclick.net
+127.0.0.1 www-googletagmanager.l.google.com
+127.0.0.1 googleadapis.l.google.com
+127.0.0.1 s0.2mdn.net
+127.0.0.1 googleads.g.doubleclick.net
+127.0.0.1 files.adform.net
+127.0.0.1 secure-ds.serving-sys.com
+127.0.0.1 securepubads.g.doubleclick.net
+127.0.0.1 s.youtube.com
+127.0.0.1 2975c.v.fwmrm.net
+127.0.0.1 static.doubleclick.net
+127.0.0.1 googleadservices.com
+127.0.0.1 ad-g.doubleclick.net
+127.0.0.1 ad.doubleclick.net
+127.0.0.1 ad.mo.doubleclick.net
+127.0.0.1 doubleclick.net
+127.0.0.1 pagead.googlesyndication.com
+127.0.0.1 pagead1.googlesyndication.com
+127.0.0.1 www.googleadservices.com
+127.0.0.1 youtube-nocookie.com
+127.0.0.1 www.youtube-nocookie.com
+127.0.0.1 analytic-google.com
+127.0.0.1 www.analytic-google.com
+127.0.0.1 www.googletagservices.com
+127.0.0.1 fwmrm.net
+127.0.0.1 innovid.com
+127.0.0.1 2mdn.net
+127.0.0.1 r8.sn-4g5ednzz.googlevideo.com
+127.0.0.1 r8---sn-4g5ednzz.googlevideo.com
+127.0.0.1 r6.sn-4g5ednll.googlevideo.com
+127.0.0.1 r6.sn-4g5edney.googlevideo.com
+127.0.0.1 r6.sn-4g5ednek.googlevideo.com
+127.0.0.1 r6.sn-4g5ednee.googlevideo.com
+127.0.0.1 r6.sn-4g5edn7e.googlevideo.com
+127.0.0.1 r6.sn-4g5e6nez.googlevideo.com
+127.0.0.1 r6---sn-4g5ednll.googlevideo.com
+127.0.0.1 r6---sn-4g5edney.googlevideo.com
+127.0.0.1 r6---sn-4g5ednek.googlevideo.com
+127.0.0.1 r6---sn-4g5ednee.googlevideo.com
+127.0.0.1 r6---sn-4g5edn7e.googlevideo.com
+127.0.0.1 r6---sn-4g5e6nez.googlevideo.com
+127.0.0.1 r5.sn-h0jeenek.googlevideo.com
+127.0.0.1 r5.sn-4g5ednzz.googlevideo.com
+127.0.0.1 r5.sn-4g5ednsz.googlevideo.com
+127.0.0.1 r5.sn-4g5ednsy.googlevideo.com
+127.0.0.1 r5.sn-4g5ednsr.googlevideo.com
+127.0.0.1 r5.sn-4g5ednsl.googlevideo.com
+127.0.0.1 r5.sn-4g5ednsd.googlevideo.com
+127.0.0.1 r5.sn-4g5edns6.googlevideo.com
+127.0.0.1 r5.sn-4g5ednly.googlevideo.com
+127.0.0.1 r5.sn-4g5edn7s.googlevideo.com
+127.0.0.1 r5.sn-4g5e6nzl.googlevideo.com
+127.0.0.1 r5.sn-4g5e6nze.googlevideo.com
+127.0.0.1 r5.sn-4g5e6nz7.googlevideo.com
+127.0.0.1 r5.sn-4g5e6nsz.googlevideo.com
+127.0.0.1 r5.sn-4g5e6nsy.googlevideo.com
+127.0.0.1 r5.sn-4g5e6nss.googlevideo.com
+127.0.0.1 r5.sn-4g5e6nsk.googlevideo.com
+127.0.0.1 r5.sn-4g5e6ns7.googlevideo.com
+127.0.0.1 r5.sn-4g5e6ns6.googlevideo.com
+127.0.0.1 r5.sn-4g5e6nls.googlevideo.com
+127.0.0.1 r5.sn-4g5e6ney.googlevideo.com
+127.0.0.1 r5.sn-4g5e6n7r.googlevideo.com
+127.0.0.1 r5.sn-4g5e6n7k.googlevideo.com
+127.0.0.1 r5---sn-h0jeenek.googlevideo.com
+127.0.0.1 r5---sn-4g5ednzz.googlevideo.com
+127.0.0.1 r5---sn-4g5ednsz.googlevideo.com
+127.0.0.1 r5---sn-4g5ednsy.googlevideo.com
+127.0.0.1 r5---sn-4g5ednsr.googlevideo.com
+127.0.0.1 r5---sn-4g5ednsl.googlevideo.com
+127.0.0.1 r5---sn-4g5ednsd.googlevideo.com
+127.0.0.1 r5---sn-4g5edns6.googlevideo.com
+127.0.0.1 r5---sn-4g5ednly.googlevideo.com
+127.0.0.1 r5---sn-4g5edn7s.googlevideo.com
+127.0.0.1 r5---sn-4g5e6nzl.googlevideo.com
+127.0.0.1 r5---sn-4g5e6nze.googlevideo.com
+127.0.0.1 r5---sn-4g5e6nz7.googlevideo.com
+127.0.0.1 r5---sn-4g5e6nsz.googlevideo.com
+127.0.0.1 r5---sn-4g5e6nsy.googlevideo.com
+127.0.0.1 r5---sn-4g5e6nss.googlevideo.com
+127.0.0.1 r5---sn-4g5e6nsk.googlevideo.com
+127.0.0.1 r5---sn-4g5e6ns7.googlevideo.com
+127.0.0.1 r5---sn-4g5e6ns6.googlevideo.com
+127.0.0.1 r5---sn-4g5e6nls.googlevideo.com
+127.0.0.1 r5---sn-4g5e6ney.googlevideo.com
+127.0.0.1 r5---sn-4g5e6n7r.googlevideo.com
+127.0.0.1 r5---sn-4g5e6n7k.googlevideo.com
+127.0.0.1 r4.sn-4g5ednz7.googlevideo.com
+127.0.0.1 r4.sn-4g5ednsy.googlevideo.com
+127.0.0.1 r4.sn-4g5ednsk.googlevideo.com
+127.0.0.1 r4.sn-4g5ednsd.googlevideo.com
+127.0.0.1 r4---sn-4g5ednz7.googlevideo.com
+127.0.0.1 r4---sn-4g5ednsy.googlevideo.com
+127.0.0.1 r4---sn-4g5ednsk.googlevideo.com
+127.0.0.1 r4---sn-4g5ednsd.googlevideo.com
+127.0.0.1 r3.sn-4g5ednz7.googlevideo.com
+127.0.0.1 r3.sn-4g5ednss.googlevideo.com
+127.0.0.1 r3.sn-4g5ednsd.googlevideo.com
+127.0.0.1 r3.sn-4g5ednls.googlevideo.com
+127.0.0.1 r3.sn-4g5ednll.googlevideo.com
+127.0.0.1 r3.sn-4g5ednee.googlevideo.com
+127.0.0.1 r3.sn-4g5edned.googlevideo.com
+127.0.0.1 r3.sn-4g5edne7.googlevideo.com
+127.0.0.1 r3.sn-4g5edne6.googlevideo.com
+127.0.0.1 r3.sn-4g5e6nzz.googlevideo.com
+127.0.0.1 r3.sn-4g5e6nzs.googlevideo.com
+127.0.0.1 r3.sn-4g5e6nsz.googlevideo.com
+127.0.0.1 r3.sn-4g5e6nsy.googlevideo.com
+127.0.0.1 r3.sn-4g5e6nsk.googlevideo.com
+127.0.0.1 r3.sn-4g5e6nle.googlevideo.com
+127.0.0.1 r3.sn-4g5e6nld.googlevideo.com
+127.0.0.1 r3---sn-4g5ednz7.googlevideo.com
+127.0.0.1 r3---sn-4g5ednss.googlevideo.com
+127.0.0.1 r3---sn-4g5ednsd.googlevideo.com
+127.0.0.1 r3---sn-4g5ednls.googlevideo.com
+127.0.0.1 r3---sn-4g5ednll.googlevideo.com
+127.0.0.1 r3---sn-4g5ednee.googlevideo.com
+127.0.0.1 r3---sn-4g5edned.googlevideo.com
+127.0.0.1 r3---sn-4g5edne7.googlevideo.com
+127.0.0.1 r3---sn-4g5edne6.googlevideo.com
+127.0.0.1 r3---sn-4g5e6nzz.googlevideo.com
+127.0.0.1 r3---sn-4g5e6nzs.googlevideo.com
+127.0.0.1 r3---sn-4g5e6nsz.googlevideo.com
+127.0.0.1 r3---sn-4g5e6nsy.googlevideo.com
+127.0.0.1 r3---sn-4g5e6nsk.googlevideo.com
+127.0.0.1 r3---sn-4g5e6nle.googlevideo.com
+127.0.0.1 r3---sn-4g5e6nld.googlevideo.com
+127.0.0.1 r2.sn-hp57kn6e.googlevideo.com
+127.0.0.1 r2.sn-h0jeln7e.googlevideo.com
+127.0.0.1 r2.sn-h0jeener.googlevideo.com
+127.0.0.1 r2.sn-h0jeen76.googlevideo.com
+127.0.0.1 r2.sn-4g5ednzz.googlevideo.com
+127.0.0.1 r2.sn-4g5ednly.googlevideo.com
+127.0.0.1 r2.sn-4g5ednls.googlevideo.com
+127.0.0.1 r2.sn-4g5ednle.googlevideo.com
+127.0.0.1 r2.sn-4g5ednee.googlevideo.com
+127.0.0.1 r2.sn-4g5edned.googlevideo.com
+127.0.0.1 r2.sn-4g5edn7y.googlevideo.com
+127.0.0.1 r2.sn-4g5e6nsz.googlevideo.com
+127.0.0.1 r2.sn-4g5e6nsy.googlevideo.com
+127.0.0.1 r2.sn-4g5e6nsk.googlevideo.com
+127.0.0.1 r2.sn-4g5e6ns6.googlevideo.com
+127.0.0.1 r2.sn-4g5e6nl7.googlevideo.com
+127.0.0.1 r2.sn-4g5e6ney.googlevideo.com
+127.0.0.1 r2---sn-hp57kn6e.googlevideo.com
+127.0.0.1 r2---sn-h0jeln7e.googlevideo.com
+127.0.0.1 r2---sn-h0jeener.googlevideo.com
+127.0.0.1 r2---sn-h0jeen76.googlevideo.com
+127.0.0.1 r2---sn-4g5ednzz.googlevideo.com
+127.0.0.1 r2---sn-4g5ednse.googlevideo.com
+127.0.0.1 r2---sn-4g5ednly.googlevideo.com
+127.0.0.1 r2---sn-4g5ednls.googlevideo.com
+127.0.0.1 r2---sn-4g5ednle.googlevideo.com
+127.0.0.1 r2---sn-4g5ednee.googlevideo.com
+127.0.0.1 r2---sn-4g5edned.googlevideo.com
+127.0.0.1 r2---sn-4g5edn7y.googlevideo.com
+127.0.0.1 r2---sn-4g5e6nsz.googlevideo.com
+127.0.0.1 r2---sn-4g5e6nsy.googlevideo.com
+127.0.0.1 r2---sn-4g5e6nsk.googlevideo.com
+127.0.0.1 r2---sn-4g5e6ns6.googlevideo.com
+127.0.0.1 r2---sn-4g5e6nl7.googlevideo.com
+127.0.0.1 r2---sn-4g5e6ney.googlevideo.com
+127.0.0.1 r15.sn-4g5ednzz.googlevideo.com
+127.0.0.1 r15---sn-4g5ednzz.googlevideo.com
+127.0.0.1 r11.sn-4g5ednzz.googlevideo.com
+127.0.0.1 r11---sn-4g5ednzz.googlevideo.com
+127.0.0.1 r10.sn-4g5ednzz.googlevideo.com
+127.0.0.1 r10---sn-4g5ednzz.googlevideo.com
+127.0.0.1 r1.sn-h0jeln7e.googlevideo.com
+127.0.0.1 r1.sn-h0jeened.googlevideo.com
+127.0.0.1 r1.sn-h0jeen76.googlevideo.com
+127.0.0.1 r1.sn-4g5ednsd.googlevideo.com
+127.0.0.1 r1.sn-4g5ednly.googlevideo.com
+127.0.0.1 r1.sn-4g5ednll.googlevideo.com
+127.0.0.1 r1.sn-4g5edne6.googlevideo.com
+127.0.0.1 r1.sn-4g5e6nzz.googlevideo.com
+127.0.0.1 r1.sn-4g5e6nz7.googlevideo.com
+127.0.0.1 r1.sn-4g5e6nsy.googlevideo.com
+127.0.0.1 r1.sn-4g5e6nez.googlevideo.com
+127.0.0.1 r1---sn-h0jeln7e.googlevideo.com
+127.0.0.1 r1---sn-h0jeened.googlevideo.com
+127.0.0.1 r1---sn-h0jeen76.googlevideo.com
+127.0.0.1 r1---sn-4g5ednsd.googlevideo.com
+127.0.0.1 r1---sn-4g5ednly.googlevideo.com
+127.0.0.1 r1---sn-4g5ednll.googlevideo.com
+127.0.0.1 r1---sn-4g5edne6.googlevideo.com
+127.0.0.1 r1---sn-4g5e6nzz.googlevideo.com
+127.0.0.1 r1---sn-4g5e6nz7.googlevideo.com
+127.0.0.1 r1---sn-4g5e6nsy.googlevideo.com
+127.0.0.1 r1---sn-4g5e6ns7.googlevideo.com
+127.0.0.1 r1---sn-4g5e6nez.googlevideo.com
+127.0.0.1 manifest.googlevideo.com
+127.0.0.1 r8.sn-n02xgoxufvg3-2gbs.googlevideo.com
+127.0.0.1 r8---sn-n02xgoxufvg3-2gbs.googlevideo.com
+127.0.0.1 r6.sn-4g5edne7.googlevideo.com
+127.0.0.1 r6---sn-4g5edne7.googlevideo.com
+127.0.0.1 r5.sn-hp57yn7y.googlevideo.com
+127.0.0.1 r5---sn-hp57yn7y.googlevideo.com
+127.0.0.1 r4.sn-h0jeln7l.googlevideo.com
+127.0.0.1 r4.sn-h0jeln7e.googlevideo.com
+127.0.0.1 r4.sn-h0jeened.googlevideo.com
+127.0.0.1 r4.sn-4g5ednzz.googlevideo.com
+127.0.0.1 r4.sn-4g5edns7.googlevideo.com
+127.0.0.1 r4.sn-4g5ednly.googlevideo.com
+127.0.0.1 r4.sn-4g5ednld.googlevideo.com
+127.0.0.1 r4.sn-4g5edney.googlevideo.com
+127.0.0.1 r4.sn-4g5e6nzs.googlevideo.com
+127.0.0.1 r4.sn-4g5e6ns6.googlevideo.com
+127.0.0.1 r4.sn-4g5e6nez.googlevideo.com
+127.0.0.1 r4---sn-h0jeln7l.googlevideo.com
+127.0.0.1 r4---sn-h0jeln7e.googlevideo.com
+127.0.0.1 r4---sn-h0jeened.googlevideo.com
+127.0.0.1 r4---sn-4g5ednzz.googlevideo.com
+127.0.0.1 r4---sn-4g5edns7.googlevideo.com
+127.0.0.1 r4---sn-4g5ednly.googlevideo.com
+127.0.0.1 r4---sn-4g5ednld.googlevideo.com
+127.0.0.1 r4---sn-4g5edney.googlevideo.com
+127.0.0.1 r4---sn-4g5e6nzs.googlevideo.com
+127.0.0.1 r4---sn-4g5e6ns6.googlevideo.com
+127.0.0.1 r4---sn-4g5e6nez.googlevideo.com
+127.0.0.1 r3.sn-4g5ednzz.googlevideo.com
+127.0.0.1 r3.sn-4g5ednsz.googlevideo.com
+127.0.0.1 r3.sn-4g5edns6.googlevideo.com
+127.0.0.1 r3.sn-4g5ednld.googlevideo.com
+127.0.0.1 r3.sn-4g5e6nsr.googlevideo.com
+127.0.0.1 r3.sn-4g5e6nl7.googlevideo.com
+127.0.0.1 r3---sn-4g5ednzz.googlevideo.com
+127.0.0.1 r3---sn-4g5ednsz.googlevideo.com
+127.0.0.1 r3---sn-4g5edns6.googlevideo.com
+127.0.0.1 r3---sn-4g5ednld.googlevideo.com
+127.0.0.1 r3---sn-4g5e6nsr.googlevideo.com
+127.0.0.1 r3---sn-4g5e6nl7.googlevideo.com
+127.0.0.1 r2.sn-4g5ednse.googlevideo.com
+127.0.0.1 r2.sn-4g5ednld.googlevideo.com
+127.0.0.1 r2.sn-4g5e6nzl.googlevideo.com
+127.0.0.1 r2.sn-4g5e6nez.googlevideo.com
+127.0.0.1 r2---sn-4g5ednld.googlevideo.com
+127.0.0.1 r2---sn-4g5e6nzl.googlevideo.com
+127.0.0.1 r2---sn-4g5e6nez.googlevideo.com
+127.0.0.1 r1.sn-4g5ednsr.googlevideo.com
+127.0.0.1 r1.sn-4g5ednsl.googlevideo.com
+127.0.0.1 r1.sn-4g5ednse.googlevideo.com
+127.0.0.1 r1.sn-4g5edned.googlevideo.com
+127.0.0.1 r1.sn-4g5e6ns7.googlevideo.com
+127.0.0.1 r1.sn-4g5e6ns6.googlevideo.com
+127.0.0.1 r1.sn-4g5e6nl6.googlevideo.com
+127.0.0.1 r1.sn-4g5e6ne6.googlevideo.com
+127.0.0.1 r1---sn-4g5ednsr.googlevideo.com
+127.0.0.1 r1---sn-4g5ednsl.googlevideo.com
+127.0.0.1 r1---sn-4g5ednse.googlevideo.com
+127.0.0.1 r1---sn-4g5edned.googlevideo.com
+127.0.0.1 r1---sn-4g5e6ns6.googlevideo.com
+127.0.0.1 r1---sn-4g5e6nl6.googlevideo.com
+127.0.0.1 r1---sn-4g5e6ne6.googlevideo.com
+#pkg=baidu.com;百度广告服务
+127.0.0.1 adm.baidu.com
+127.0.0.1 ad.player.baidu.com
+127.0.0.1 adscdn.baidu.com
+127.0.0.1 afd.baidu.com
+127.0.0.1 als.baidu.com
+127.0.0.1 cbjs.baidu.com
+127.0.0.1 cm.baidu.com
+127.0.0.1 cm.pos.baidu.com
+127.0.0.1 cpro.baidu.com
+127.0.0.1 crs.baidu.com
+127.0.0.1 eclick.baidu.com
+127.0.0.1 eiv.baidu.com
+127.0.0.1 entry.baidu.com
+127.0.0.1 idm-su.baidu.com
+127.0.0.1 idm.bce.baidu.com
+127.0.0.1 mobads-logs.baidu.com
+127.0.0.1 mobads.baidu.com
+127.0.0.1 msite.baidu.com
+127.0.0.1 nsclick.baidu.com
+127.0.0.1 nsclickvideo.baidu.com
+127.0.0.1 pc.videoclick.baidu.com
+127.0.0.1 pos.baidu.com
+127.0.0.1 push.zhanzhang.baidu.com
+127.0.0.1 river.zhidao.baidu.com
+127.0.0.1 s.cpro.baidu.com
+127.0.0.1 wangmeng.baidu.com
+127.0.0.1 wn.pos.baidu.com
+127.0.0.1 bdplus.baidu.com
+127.0.0.1 datax.baidu.com
+127.0.0.1 openrcv.baidu.com
+127.0.0.1 a.baidu.com
+127.0.0.1 cb.baidu.com
+127.0.0.1 hdj.baidu.com
+127.0.0.1 mssp.baidu.com
+127.0.0.1 nlog.baidu.com
+127.0.0.1 ad.player.baidu.com
+127.0.0.1 sestat.baidu.com
+127.0.0.1 stat.v.baidu.com
+127.0.0.1 videopush.baidu.com
+127.0.0.1 wisepush.video.baidu.com
+127.0.0.1 hmma.baidu.com
+127.0.0.1 dup.baidustatic.com
+127.0.0.1 sp0.baidu.com
+127.0.0.1 qapm.baidu.com
+127.0.0.1 fclog.baidu.com
+127.0.0.1 sofire.baidu.com
+127.0.0.1 tcbox.baidu.com
+127.0.0.1 browserkernel.baidu.com
+127.0.0.1 hijack.baidu.com
+127.0.0.1 hpd.baidu.com
+127.0.0.1 hm.baidu.com
+127.0.0.1 tcbox.baidu.com
+127.0.0.1 ecma.bdimg.com
+127.0.0.1 ecmb.bdimg.com
+127.0.0.1 cdn-haokanapk.baidu.com
+127.0.0.1 adavideo.baidu.com
+127.0.0.1 ada.baidu.com
+127.0.0.1 tuijian.baidu.com
+127.0.0.1 ucstat.baidu.com
+127.0.0.1 crab.baidu.com
+127.0.0.1 api1.tuisong.baidu.com
+127.0.0.1 baidu-mipdx.cn.miaozhen.com
+127.0.0.1 api3.tuisong.baidu.com
+127.0.0.1 api8.tuisong.baidu.com
+127.0.0.1 sa.tuisong.baidu.com
+127.0.0.1 api.tuisong.baidu.com
+127.0.0.1 sa8.tuisong.baidu.com
+127.0.0.1 cpro.baidustatic.com
+#pkg=xxx.ad.doubleclick.net;广告联盟
+127.0.0.1 iqiyi.irs01.com
+127.0.0.1 letv.irs01.com
+127.0.0.1 s9.irs03.com
+127.0.0.1 s72f5a8e.irs03.com
+127.0.0.1 s06aa680.irs03.com
+127.0.0.1 3m.mediav.com
+127.0.0.1 ckmap.mediav.com
+127.0.0.1 click.mediav.com
+127.0.0.1 cm.mediav.com
+127.0.0.1 g1max.mediav.com
+127.0.0.1 g1xd.mediav.com
+127.0.0.1 item.mediav.com
+127.0.0.1 juxiao.mediav.com
+127.0.0.1 material-ssl.mediav.com
+127.0.0.1 material.mediav.com
+127.0.0.1 max-l.mediav.com
+127.0.0.1 max.mediav.com
+127.0.0.1 mvp.mediav.com
+127.0.0.1 pages-juxiao.mediav.com
+127.0.0.1 pages.juxiao.mediav.com
+127.0.0.1 pv.mediav.com
+127.0.0.1 s3m.mediav.com
+127.0.0.1 sdk.mediav.com
+127.0.0.1 secure.mediav.com
+127.0.0.1 show-3.mediav.com
+127.0.0.1 show-g.mediav.com
+127.0.0.1 show-m.mediav.com
+127.0.0.1 show-s.mediav.com
+127.0.0.1 show.g.mediav.com
+127.0.0.1 show.m.mediav.com
+127.0.0.1 show.mediav.com
+127.0.0.1 ssxd.mediav.com
+127.0.0.1 static-ssl.mediav.com
+127.0.0.1 static.mediav.com
+127.0.0.1 t.dsp.mediav.com
+127.0.0.1 track.mediav.com
+127.0.0.1 tran.mediav.com
+127.0.0.1 view.mediav.com
+127.0.0.1 xd.mediav.com
+127.0.0.1 otf.msn.com
+127.0.0.1 umeng.com
 127.0.0.1 alog.umeng.com
-127.0.0.1 hotupgrade.hpplay.cn
-127.0.0.1 pin.hpplay.cn
-127.0.0.1 api.io.mi.com
-127.0.0.1 device.io.mi.com
+127.0.0.1 alog.umengcloud.com
+127.0.0.1 alog.umeng.com
+127.0.0.1 alog.umengcloud.com
+127.0.0.1 alogus.umeng.com
+127.0.0.1 alogsus.umeng.com
+127.0.0.1 ulogs.umeng.com
+127.0.0.1 ulogs.umengcloud.com
+127.0.0.1 plbslog.umeng.com
+127.0.0.1 api.wsq.umeng.com
+127.0.0.1 at.umeng.com
+127.0.0.1 au.umeng.com
+127.0.0.1 dev.umeng.com
+127.0.0.1 ex.umengcloud.com
+127.0.0.1 msg.umengcloud.com
+127.0.0.1 udash.umengcloud.com
+127.0.0.1 upoll.umengcloud.com
+127.0.0.1 utop.umengcloud.com
+127.0.0.1 api.wsq.umeng.com
+127.0.0.1 ar.umeng.com
+127.0.0.1 oc.umeng.com
+127.0.0.1 errlog.umeng.com
+127.0.0.1 offmsg.umeng.com
+127.0.0.1 aaid.umeng.com
+127.0.0.1 api.so.lianmeng.360.cn
+127.0.0.1 s.lianmeng.360.cn
+127.0.0.1 s1.stat.lianmeng.360.cn
+127.0.0.1 stat.lianmeng.360.cn
+127.0.0.1 cm.lianmeng.360.cn
+127.0.0.1 c.mse.360.cn
+127.0.0.1 service.jiagu.360.cn
+127.0.0.1 a.appjiagu.com
+127.0.0.1 b.appjiagu.com
+127.0.0.1 c.appjiagu.com
+127.0.0.1 j.appjiagu.com
+127.0.0.1 p.appjiagu.com
+127.0.0.1 s.appjiagu.com
+127.0.0.1 cm.adkmob.com
+127.0.0.1 ssdk.adkmob.com
+127.0.0.1 bigdata.advmob.cn
+127.0.0.1 cdn0.mobmore.com
+127.0.0.1 ex.mobmore.com
+127.0.0.1 bu1.duba.com
+127.0.0.1 bu2.duba.com
+127.0.0.1 service.ad.duomi.com
+127.0.0.1 ad.sinovision.net
+127.0.0.1 adsys.sinovision.net
+127.0.0.1 www.admaji.com
+127.0.0.1 ad.cacafly.com
+127.0.0.1 ad.funp.com
+127.0.0.1 ad.hiiir.com
+127.0.0.1 ad.jamba.net
+127.0.0.1 ad.jamster.co.uk
+127.0.0.1 ad.obuy.tw
+127.0.0.1 ads.fetnet.net
+127.0.0.1 ads.ign.com
+127.0.0.1 ads.ttv.com.tw
+127.0.0.1 drd.hauchi.com.tw
+127.0.0.1 ysm.hauchi.com.tw
+127.0.0.1 r.pixgold.com
+127.0.0.1 a.api.ad-locus.com
+127.0.0.1 ad-locus.com
+127.0.0.1 api.ad-locus.com
+127.0.0.1 user.ad-locus.com
+127.0.0.1 adbana.com
+127.0.0.1 api.adbana.com
+127.0.0.1 apistat.adbana.com
+127.0.0.1 cnf.adbana.com
+127.0.0.1 stat.adbana.com
+127.0.0.1 aduu.cn
+127.0.0.1 mgr.aduu.cn
+127.0.0.1 res.aduu.cn
+127.0.0.1 appuu.cn
+127.0.0.1 www.appuu.cn
+127.0.0.1 58749.admaster.com.cn
+127.0.0.1 79t2.admaster.com.cn
+127.0.0.1 8b4pea.c.admaster.com.cn
+127.0.0.1 8b6dfa.v.admaster.com.cn
+127.0.0.1 8chzga.v.admaster.com.cn
+127.0.0.1 8dcyqu.c.admaster.com.cn
+127.0.0.1 c.admaster.com.cn
+127.0.0.1 click.admaster.com.cn
+127.0.0.1 letv.axp.admaster.com.cn
+127.0.0.1 pptv.adx.admaster.com.cn
+127.0.0.1 rtb.admaster.com.cn
+127.0.0.1 smt.admaster.com.cn
+127.0.0.1 v.admaster.com.cn
+127.0.0.1 vbaof.admaster.com.cn
+127.0.0.1 vhunantv.admaster.com.cn
+127.0.0.1 view.admaster.com.cn
+127.0.0.1 viqiyi.admaster.com.cn
+127.0.0.1 vletv.admaster.com.cn
+127.0.0.1 vqq.admaster.com.cn
+127.0.0.1 vsohu.admaster.com.cn
+127.0.0.1 www.admaster.com.cn
+127.0.0.1 js.admin6.com
+127.0.0.1 conversion.adpro.cn
+127.0.0.1 m.adpro.cn
+127.0.0.1 x.adpro.cn
+127.0.0.1 adpro.pro.cn
+127.0.0.1 adx.pro.cn
+127.0.0.1 conversion.pro.cn
+127.0.0.1 dsp.pro.cn
+127.0.0.1 pro.cn
+127.0.0.1 ssp.pro.cn
+127.0.0.1 www.pro.cn
+127.0.0.1 www.adsage.cn
+127.0.0.1 download.adsage.com
+127.0.0.1 mws.adsage.com
+127.0.0.1 trc.adsage.com
+127.0.0.1 config.mobisage.cn
+127.0.0.1 adsame.com
+127.0.0.1 adsamer.adsame.com
+127.0.0.1 asp.adsame.com
+127.0.0.1 autobild.adsame.com
+127.0.0.1 botuu.adsame.com
+127.0.0.1 caing.adsame.com
+127.0.0.1 caixin.adsame.com
+127.0.0.1 conde.adsame.com
+127.0.0.1 corebug.adsame.com
+127.0.0.1 dcci.adsame.com
+127.0.0.1 demo.adsame.com
+127.0.0.1 dspimg.adsame.com
+127.0.0.1 eagleasp.adsame.com
+127.0.0.1 easynews.adsame.com
+127.0.0.1 hnb2c.adsame.com
+127.0.0.1 i.adsame.com
+127.0.0.1 ifeng.adsame.com
+127.0.0.1 jfdaily.adsame.com
+127.0.0.1 jrj.adsame.com
+127.0.0.1 jsmedia.adsame.com
+127.0.0.1 mail.adsame.com
+127.0.0.1 material.jfdaily.adsame.com
+127.0.0.1 max.adsame.com
+127.0.0.1 maxsys.adsame.com
+127.0.0.1 mix.adsame.com
+127.0.0.1 oeeee.adsame.com
+127.0.0.1 panda.adsame.com
+127.0.0.1 preview.adsame.com
+127.0.0.1 qianlong.adsame.com
+127.0.0.1 rayli.adsame.com
+127.0.0.1 return.adsame.com
+127.0.0.1 samba.adsame.com
+127.0.0.1 sambaclk.adsame.com
+127.0.0.1 sambasys.adsame.com
+127.0.0.1 sammix.adsame.com
+127.0.0.1 samrt.adsame.com
+127.0.0.1 stnn.adsame.com
+127.0.0.1 techweb.iv.adsame.com
+127.0.0.1 uusee.adsame.com
+127.0.0.1 xinhuanet.adsame.com
+127.0.0.1 yaolan.adsame.com
+127.0.0.1 www.adsame.com
+127.0.0.1 juxiao.adsmogo.net
+127.0.0.1 www.adsmogo.net
+127.0.0.1 adsmogo.com
+127.0.0.1 click1forhz.adsmogo.com
+127.0.0.1 click2forhz.adsmogo.com
+127.0.0.1 click3forhz.adsmogo.com
+127.0.0.1 my.adsmogo.com
+127.0.0.1 www.adsmogo.com
+127.0.0.1 adfill.adview.cn
+127.0.0.1 adview.cn
+127.0.0.1 bid.adview.cn
+127.0.0.1 config.adview.cn
+127.0.0.1 report.adview.cn
+127.0.0.1 rtb.adview.cn
+127.0.0.1 test2014.adview.cn
+127.0.0.1 www.adview.cn
+127.0.0.1 a-ad.adwo.com
+127.0.0.1 ad-bg.adwo.com
+127.0.0.1 ad-count.adwo.com
+127.0.0.1 ad.adwo.com
+127.0.0.1 adtest.adwo.com
+127.0.0.1 ama.adwo.com
+127.0.0.1 apiconfig.adwo.com
+127.0.0.1 game.adwo.com
+127.0.0.1 mw.adwo.com
+127.0.0.1 nhz.adwo.com
+127.0.0.1 r2.adwo.com
+127.0.0.1 r3.adwo.com
+127.0.0.1 sdu.adwo.com
+127.0.0.1 static.adwo.com
+127.0.0.1 track.adwo.com
+127.0.0.1 www.adwo.com
+127.0.0.1 api.domob.cn
+127.0.0.1 domob.cn
+127.0.0.1 domob.com.cn
+127.0.0.1 e.domob.cn
+127.0.0.1 s.domob.cn
+127.0.0.1 sd.domob.cn
+127.0.0.1 sm.domob.cn
+127.0.0.1 api.doumob.com
+127.0.0.1 www.doumob.com
+127.0.0.1 duomeng.cn
+127.0.0.1 e.duomeng.org
+127.0.0.1 guomob.com
+127.0.0.1 ad.madserving.com
+127.0.0.1 ads.static.madserving.com
+127.0.0.1 adv.madserving.com
+127.0.0.1 alicdnv2.sitemonitor.cn.miaozhen.com
+127.0.0.1 baofeng.m.cn.miaozhen.com
+127.0.0.1 cm.cn.miaozhen.com
+127.0.0.1 e.cn.miaozhen.com
+127.0.0.1 g.ads.cn.miaozhen.com
+127.0.0.1 g.cn.miaozhen.com
+127.0.0.1 hunantv.m.cn.miaozhen.com
+127.0.0.1 iqiyi.m.cn.miaozhen.com
+127.0.0.1 js.miaozhen.com
+127.0.0.1 letv.m.cn.miaozhen.com
+127.0.0.1 miaozhen.com
+127.0.0.1 msg.cn.miaozhen.com
+127.0.0.1 sitemonitor.cn.miaozhen.com
+127.0.0.1 sohutv.m.cn.miaozhen.com
+127.0.0.1 stm-cdn.cn.miaozhen.com
+127.0.0.1 stm-collect.cn.miaozhen.com
+127.0.0.1 survey.miaozhen.com
+127.0.0.1 tencent-dtv.m.cn.miaozhen.com
+127.0.0.1 tyaqy.m.cn.miaozhen.com
+127.0.0.1 tytx.m.cn.miaozhen.com
+127.0.0.1 xiangchaokankan.m.cn.miaozhen.com
+127.0.0.1 yktd.m.cn.miaozhen.com
+127.0.0.1 youku-dtv.m.cn.miaozhen.com
+127.0.0.1 api.exc.mob.com
+127.0.0.1 api.share.mob.com
+127.0.0.1 api.fd.mob.com
+127.0.0.1 c.data.mob.com
+127.0.0.1 cca.mob.com
+127.0.0.1 devs.data.mob.com
+127.0.0.1 m.data.mob.com
+127.0.0.1 api.mobgi.com
+127.0.0.1 mobgi.com
+127.0.0.1 stat.mobgi.com
+127.0.0.1 w.ymapp.com
+127.0.0.1 img-cdn-spot.ymcdn.cn
+127.0.0.1 a.img.static.youmi.net
+127.0.0.1 a1.img.static.youmi.net
+127.0.0.1 a2.img.static.youmi.net
+127.0.0.1 a3.img.static.youmi.net
+127.0.0.1 aos.wall.youmi.net
+127.0.0.1 au.youmi.net
+127.0.0.1 cf8d.stat.gw.youmi.net
+127.0.0.1 notifiter.youmi.net
+127.0.0.1 r.youmi.net
+127.0.0.1 s.youmi.net
+127.0.0.1 stat.gw.youmi.net
+127.0.0.1 static.youmi.net
+127.0.0.1 t.youmi.net
+127.0.0.1 youmi.net
+127.0.0.1 www.youmi.net
+127.0.0.1 api.youxiaoad.com
+127.0.0.1 source.youxiaoad.com
+127.0.0.1 ssp.youxiaoad.com
+127.0.0.1 ads.admarvel.com
+127.0.0.1 admedia.com
+127.0.0.1 b.admedia.com
+127.0.0.1 g.admedia.com
+127.0.0.1 inline.admedia.com
+127.0.0.1 m.admedia.com
+127.0.0.1 i.l.inmobicdn.net
+127.0.0.1 au.w.inmobi.cn
+127.0.0.1 sdkm.w.inmobi.cn
+127.0.0.1 api.w.inmobi.com
+127.0.0.1 apptv.w.inmobi.com
+127.0.0.1 au.w.inmobi.com
+127.0.0.1 c.w.inmobi.com
+127.0.0.1 cf.cdn.inmobi.com
+127.0.0.1 config-ltvp.inmobi.com
+127.0.0.1 config.inmobi.com
+127.0.0.1 et.w.inmobi.com
+127.0.0.1 i.w.inmobi.com
+127.0.0.1 sdkm.w.inmobi.com
+127.0.0.1 www.inmobi.com
+127.0.0.1 ad1.greedland.net
+127.0.0.1 ad1.udn.com
+127.0.0.1 ad2.sina.com.cn
+127.0.0.1 ad2.udn.com
+127.0.0.1 ad2.yam.com
+127.0.0.1 ad.363.in
+127.0.0.1 ad3.sina.com.cn
+127.0.0.1 ad3.udn.com
+127.0.0.1 ad4.sina.com.cn
+127.0.0.1 ad4.udn.com
+127.0.0.1 ad.adhouyi.cn
+127.0.0.1 adadvisor.net
+127.0.0.1 ad.adwo.com
+127.0.0.1 adapi.lenovogame.com
+127.0.0.1 ad.api.moji.com
+127.0.0.1 adapi.shouji.360.cn
+127.0.0.1 adasad.myweb.hinet.net
+127.0.0.1 ad-bg.adwo.com
+127.0.0.1 ad.caiyunapp.com
+127.0.0.1 adcast.deviantart.com
+127.0.0.1 adcore.lenovomm.com
+127.0.0.1 ad-count.adwo.com
+127.0.0.1 ad-delivery.net
+127.0.0.1 ad.dev.360.cn
+127.0.0.1 ad.duapps.com
+127.0.0.1 adeventtracker.spotify.com
+127.0.0.1 adfill.adview.cn
+127.0.0.1 ad.flurry.com
+127.0.0.1 adfuture.cn
+127.0.0.1 ad.gamebox.360.cn
+127.0.0.1 adgeo.163.com
+127.0.0.1 ad.greedland.net
+127.0.0.1 adimages.sina.com.hk
+127.0.0.1 adimg.daumcdn.net
+127.0.0.1 adimg.deviantart.net
+127.0.0.1 adimg.mobile.sina.cn
+127.0.0.1 adimg.uve.weibo.com
+127.0.0.1 adinfo.ra1.xlmc.sec.miui.com
+127.0.0.1 adlaunch.moji.com
+127.0.0.1 adlog.flurry.com
+127.0.0.1 ad.mail.sohu.com
+127.0.0.1 admd.yam.com
+127.0.0.1 admeld.adnxs.com
+127.0.0.1 adm.icast.cn
+127.0.0.1 adm.leju.sina.com.cn
+127.0.0.1 ad.netowl.jp
+127.0.0.1 adn.insight.ucweb.com
+127.0.0.1 a.dounanhuahui.com
+127.0.0.1 adpro.pro.cn
+127.0.0.1 adpublish.ydstatic.com
+127.0.0.1 adres.myaora.net
+127.0.0.1 ads1.msads.net
+127.0.0.1 ads1.msn.com
+127.0.0.1 ads2.msads.net
+127.0.0.1 ads2.msn.com
+127.0.0.1 ads.adaptv.advertising.com
+127.0.0.1 ads-a.juicyads.com
+127.0.0.1 adsco.re
+127.0.0.1 ads.creative-serving.com
+127.0.0.1 adsence.sogou.com
+127.0.0.1 adserve2.tom.com
+127.0.0.1 adserver.adtech.de
+127.0.0.1 adserver.adtechus.com
+127.0.0.1 adserver.juicyads.com
+127.0.0.1 adserver-us.adtech.advertising.com
+127.0.0.1 adserver.xpanama.net
+127.0.0.1 adserver.yahoo.com
+127.0.0.1 ads.eu.msn.com
+127.0.0.1 ads.flurry.com
+127.0.0.1 adsfs.oppomobile.com
+127.0.0.1 ads.gionee.com
+127.0.0.1 ads.gmodules.com
+127.0.0.1 adsmogo.com
+127.0.0.1 ads.msn.com
+127.0.0.1 ads.ninemsn.com.au
+127.0.0.1 ad.sohu.com
+127.0.0.1 ads.pubmatic.com
+127.0.0.1 adsp.xunlei.com
+127.0.0.1 ads.servebom.com
+127.0.0.1 ads.service.kugou.com
+127.0.0.1 ads.sina.com
+127.0.0.1 ads.stickyadstv.com
+127.0.0.1 adss.yahoo.com
+127.0.0.1 adsunflower.com
+127.0.0.1 ads.waps.cn
+127.0.0.1 ads.wapx.cn
+127.0.0.1 ads.yam.com
+127.0.0.1 ads.yimg.com
+127.0.0.1 adsyndication.msn.com
+127.0.0.1 adtest.adwo.com
+127.0.0.1 adtrack.ucweb.com
+127.0.0.1 adui.tg.meitu.com
+127.0.0.1 adview.cn
+127.0.0.1 ad.wang502.com
+127.0.0.1 ad.winrar.com.cn
+127.0.0.1 ad.wretch.cc
+127.0.0.1 adx.ads.oppomobile.com
+127.0.0.1 adx.pro.cn
+127.0.0.1 adx-static.ksosoft.com
+127.0.0.1 adx.xiaodutv.com
+127.0.0.1 ad.gtbrowser.com
+127.0.0.1 ad-delivery.net
+127.0.0.1 adadvisor.net
+127.0.0.1 ads.creative-serving.com
+127.0.0.1 adserver.adtech.de
+127.0.0.1 www.admarket.mobi
+127.0.0.1 z.sora.yoyi.com.cn
+127.0.0.1 pcookie.cnzz.com
