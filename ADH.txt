@@ -691,6 +691,7 @@
 ||*overseactrl*^$important
 ||beacon.qq.com^$important
 @@||wx.qlogo.cn^$important
+||stun.services.mozilla.com^$important
 !---------------------------------------------------------------
 ! Title: AdGuardHome分类规则  P2P下崽器等恶心网站
 ||pc6a.com^$important
