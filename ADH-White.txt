@@ -2214,8 +2214,6 @@
 @@||mobile.paypal.com
 @@||moddb.com
 @@||movies.netflix.com
-@@||mozilla.com
-@@||mozilla.net
 @@||mozilla.org
 @@||mpv.io
 @@||msedge.api.cdp.microsoft.com
